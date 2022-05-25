@@ -2412,6 +2412,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   worldLevel: 1
+  isRedPlayer: 1
+  isGreenPlayer: 0
   countAsteroidDestroy: 0
   countRedHotChillyPeperEat: 0
   countGreenChillyPeperEat: 0
@@ -3831,7 +3833,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1796151116
 SpriteRenderer:
   m_ObjectHideFlags: 0
