@@ -1,0 +1,2532 @@
+fileFormatVersion: 2
+guid: a6430fba7b6df394c9fa5caebc6b721a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6308514567824123861
+    second: SpicyPlanet_0
+  - first:
+      213: 4512940923563506466
+    second: SpicyPlanet_1
+  - first:
+      213: -8565126518336092345
+    second: SpicyPlanet_2
+  - first:
+      213: -6424145919319226086
+    second: SpicyPlanet_3
+  - first:
+      213: -2613561185752267188
+    second: SpicyPlanet_4
+  - first:
+      213: -4859388345252220436
+    second: SpicyPlanet_5
+  - first:
+      213: -2354676869821317053
+    second: SpicyPlanet_6
+  - first:
+      213: 4502855052316793477
+    second: SpicyPlanet_7
+  - first:
+      213: 768292209408473208
+    second: SpicyPlanet_8
+  - first:
+      213: 7407897752285741436
+    second: SpicyPlanet_9
+  - first:
+      213: -4922887128635931474
+    second: SpicyPlanet_10
+  - first:
+      213: 801457965900837783
+    second: SpicyPlanet_11
+  - first:
+      213: 8975984495129054334
+    second: SpicyPlanet_12
+  - first:
+      213: -845135610939625710
+    second: SpicyPlanet_13
+  - first:
+      213: 8370561770577779943
+    second: SpicyPlanet_14
+  - first:
+      213: -3082532700008728922
+    second: SpicyPlanet_15
+  - first:
+      213: -1975508462879032416
+    second: SpicyPlanet_16
+  - first:
+      213: 8939314971486811355
+    second: SpicyPlanet_17
+  - first:
+      213: -4868273678848403200
+    second: SpicyPlanet_18
+  - first:
+      213: 6731161573227824136
+    second: SpicyPlanet_19
+  - first:
+      213: -5051067836808204627
+    second: SpicyPlanet_20
+  - first:
+      213: -4352682726795592620
+    second: SpicyPlanet_21
+  - first:
+      213: 6526699255207453723
+    second: SpicyPlanet_22
+  - first:
+      213: -4626509655510423841
+    second: SpicyPlanet_23
+  - first:
+      213: 3499607132829178698
+    second: SpicyPlanet_24
+  - first:
+      213: 4148745550331311664
+    second: SpicyPlanet_25
+  - first:
+      213: -7834081368310755260
+    second: SpicyPlanet_26
+  - first:
+      213: 2928621959170553986
+    second: SpicyPlanet_27
+  - first:
+      213: -5721405796845033205
+    second: SpicyPlanet_28
+  - first:
+      213: 5758622330879369136
+    second: SpicyPlanet_29
+  - first:
+      213: -6774092940919952593
+    second: SpicyPlanet_30
+  - first:
+      213: -1059637553091239575
+    second: SpicyPlanet_31
+  - first:
+      213: -3621599027468053650
+    second: SpicyPlanet_32
+  - first:
+      213: 2617853404098360074
+    second: SpicyPlanet_33
+  - first:
+      213: 8685415067083328207
+    second: SpicyPlanet_34
+  - first:
+      213: -3338595805160512735
+    second: SpicyPlanet_35
+  - first:
+      213: 4228023513107559526
+    second: SpicyPlanet_36
+  - first:
+      213: 8150793813946185912
+    second: SpicyPlanet_37
+  - first:
+      213: -7055978293000710494
+    second: SpicyPlanet_38
+  - first:
+      213: -4116175934735607796
+    second: SpicyPlanet_39
+  - first:
+      213: 439231440471690449
+    second: SpicyPlanet_40
+  - first:
+      213: 8459254062565143635
+    second: SpicyPlanet_41
+  - first:
+      213: 1142990056134000245
+    second: SpicyPlanet_42
+  - first:
+      213: 1732004560502775752
+    second: SpicyPlanet_43
+  - first:
+      213: 917854175978852702
+    second: SpicyPlanet_44
+  - first:
+      213: 4216374310619788260
+    second: SpicyPlanet_45
+  - first:
+      213: 65809825488461807
+    second: SpicyPlanet_46
+  - first:
+      213: -740298524744888513
+    second: SpicyPlanet_47
+  - first:
+      213: -3813839667765402759
+    second: SpicyPlanet_48
+  - first:
+      213: -8638931882299723521
+    second: SpicyPlanet_49
+  - first:
+      213: 4536655968862163137
+    second: SpicyPlanet_50
+  - first:
+      213: -6636830305901278027
+    second: SpicyPlanet_51
+  - first:
+      213: -982056680382566867
+    second: SpicyPlanet_52
+  - first:
+      213: 5524983427577414351
+    second: SpicyPlanet_53
+  - first:
+      213: -4416548453509601255
+    second: SpicyPlanet_54
+  - first:
+      213: -8044085136564933592
+    second: SpicyPlanet_55
+  - first:
+      213: -7146245629830637884
+    second: SpicyPlanet_56
+  - first:
+      213: 7509935246697661453
+    second: SpicyPlanet_57
+  - first:
+      213: 783821998149751478
+    second: SpicyPlanet_58
+  - first:
+      213: 2346615889467768842
+    second: SpicyPlanet_59
+  - first:
+      213: 3334746104804266776
+    second: SpicyPlanet_60
+  - first:
+      213: 6458768238784119138
+    second: SpicyPlanet_61
+  - first:
+      213: 6415370680509545013
+    second: SpicyPlanet_62
+  - first:
+      213: -3020116268742072464
+    second: SpicyPlanet_63
+  - first:
+      213: 6050511283089383229
+    second: SpicyPlanet_64
+  - first:
+      213: -6525148595307962801
+    second: SpicyPlanet_65
+  - first:
+      213: 661180340213778246
+    second: SpicyPlanet_66
+  - first:
+      213: 5684988310675221831
+    second: SpicyPlanet_67
+  - first:
+      213: -923848452016025013
+    second: SpicyPlanet_68
+  - first:
+      213: 2205168269103474323
+    second: SpicyPlanet_69
+  - first:
+      213: -1315092051511508077
+    second: SpicyPlanet_70
+  - first:
+      213: -5947752111410590137
+    second: SpicyPlanet_71
+  - first:
+      213: -5907857136847792378
+    second: SpicyPlanet_72
+  - first:
+      213: -6510729237477211770
+    second: SpicyPlanet_73
+  - first:
+      213: -7621191510440817059
+    second: SpicyPlanet_74
+  - first:
+      213: 1108296341277434296
+    second: SpicyPlanet_75
+  - first:
+      213: 1341000030136177464
+    second: SpicyPlanet_76
+  - first:
+      213: 3530415683788096593
+    second: SpicyPlanet_77
+  - first:
+      213: 282470805063687170
+    second: SpicyPlanet_78
+  - first:
+      213: -122303089803346595
+    second: SpicyPlanet_79
+  - first:
+      213: -1716876132655044891
+    second: SpicyPlanet_80
+  - first:
+      213: -2773273895691268068
+    second: SpicyPlanet_81
+  - first:
+      213: -4304903233813349662
+    second: SpicyPlanet_82
+  - first:
+      213: 4797689688118960666
+    second: SpicyPlanet_83
+  - first:
+      213: -2868749854395713308
+    second: SpicyPlanet_84
+  - first:
+      213: -3551668120676203014
+    second: SpicyPlanet_85
+  - first:
+      213: 7327562131500511169
+    second: SpicyPlanet_86
+  - first:
+      213: 8827604077056630771
+    second: SpicyPlanet_87
+  - first:
+      213: -1663937540605453204
+    second: SpicyPlanet_88
+  - first:
+      213: 3334644649906423435
+    second: SpicyPlanet_89
+  - first:
+      213: -935212960632802592
+    second: SpicyPlanet_90
+  - first:
+      213: -8801802506789949910
+    second: SpicyPlanet_91
+  - first:
+      213: -2849416325069601834
+    second: SpicyPlanet_92
+  - first:
+      213: -2176457416443484428
+    second: SpicyPlanet_93
+  - first:
+      213: -7447620730100856887
+    second: SpicyPlanet_94
+  - first:
+      213: 3068750535147751907
+    second: SpicyPlanet_95
+  - first:
+      213: 1288105190776241531
+    second: SpicyPlanet_96
+  - first:
+      213: -7921907060256525241
+    second: SpicyPlanet_97
+  - first:
+      213: 7872245612862565144
+    second: SpicyPlanet_98
+  - first:
+      213: 6020537952921599159
+    second: SpicyPlanet_99
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpicyPlanet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b28577cac67a378a0800000000000000
+      internalID: -6308514567824123861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_1
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b73510cdf21ae30800000000000000
+      internalID: 4512940923563506466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_2
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7478c42cfce822980800000000000000
+      internalID: -8565126518336092345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_3
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a19c3bda259d8d6a0800000000000000
+      internalID: -6424145919319226086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_4
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c46cc74e2f3cabbd0800000000000000
+      internalID: -2613561185752267188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_5
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1719fcb0cff8cb0800000000000000
+      internalID: -4859388345252220436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_6
+      rect:
+        serializedVersion: 2
+        x: 1962
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 340c87dccd1825fd0800000000000000
+      internalID: -2354676869821317053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_7
+      rect:
+        serializedVersion: 2
+        x: 2289
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a5a6c10da5d7e30800000000000000
+      internalID: 4502855052316793477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_8
+      rect:
+        serializedVersion: 2
+        x: 2616
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 878fd71a1b589aa00800000000000000
+      internalID: 768292209408473208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_9
+      rect:
+        serializedVersion: 2
+        x: 2943
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c710869c1c32ec660800000000000000
+      internalID: 7407897752285741436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_10
+      rect:
+        serializedVersion: 2
+        x: 3270
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea400543d346eabb0800000000000000
+      internalID: -4922887128635931474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_11
+      rect:
+        serializedVersion: 2
+        x: 3597
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7933def06c95f1b00800000000000000
+      internalID: 801457965900837783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_12
+      rect:
+        serializedVersion: 2
+        x: 3924
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7cc49d675a119c70800000000000000
+      internalID: 8975984495129054334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_13
+      rect:
+        serializedVersion: 2
+        x: 4251
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f29eab3a97544f0800000000000000
+      internalID: -845135610939625710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_14
+      rect:
+        serializedVersion: 2
+        x: 4578
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ecd0c9c4953a2470800000000000000
+      internalID: 8370561770577779943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_15
+      rect:
+        serializedVersion: 2
+        x: 4905
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a6347f57d4a835d0800000000000000
+      internalID: -3082532700008728922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_16
+      rect:
+        serializedVersion: 2
+        x: 5232
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab315b05859594e0800000000000000
+      internalID: -1975508462879032416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_17
+      rect:
+        serializedVersion: 2
+        x: 5559
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd47dc2aa93de0c70800000000000000
+      internalID: 8939314971486811355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_18
+      rect:
+        serializedVersion: 2
+        x: 5886
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0095bded1ea607cb0800000000000000
+      internalID: -4868273678848403200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_19
+      rect:
+        serializedVersion: 2
+        x: 6213
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8040102a9c3e96d50800000000000000
+      internalID: 6731161573227824136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_20
+      rect:
+        serializedVersion: 2
+        x: 6540
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae65aa609007e9b0800000000000000
+      internalID: -5051067836808204627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_21
+      rect:
+        serializedVersion: 2
+        x: 6867
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45cbe591f1a2893c0800000000000000
+      internalID: -4352682726795592620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_22
+      rect:
+        serializedVersion: 2
+        x: 7194
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b146276846e739a50800000000000000
+      internalID: 6526699255207453723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_23
+      rect:
+        serializedVersion: 2
+        x: 7521
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd6e2690bf55bcfb0800000000000000
+      internalID: -4626509655510423841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_24
+      rect:
+        serializedVersion: 2
+        x: 7848
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4bd4b5452a119030800000000000000
+      internalID: 3499607132829178698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_25
+      rect:
+        serializedVersion: 2
+        x: 8175
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 036faf6d81e439930800000000000000
+      internalID: 4148745550331311664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_26
+      rect:
+        serializedVersion: 2
+        x: 8502
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440d4549080c74390800000000000000
+      internalID: -7834081368310755260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_27
+      rect:
+        serializedVersion: 2
+        x: 8829
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 288f4c5c72e84a820800000000000000
+      internalID: 2928621959170553986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_28
+      rect:
+        serializedVersion: 2
+        x: 9156
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09e037bdbb7990b0800000000000000
+      internalID: -5721405796845033205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_29
+      rect:
+        serializedVersion: 2
+        x: 9483
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf52bbdf7cbaef40800000000000000
+      internalID: 5758622330879369136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_30
+      rect:
+        serializedVersion: 2
+        x: 9810
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b2cf46c569df1a0800000000000000
+      internalID: -6774092940919952593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_31
+      rect:
+        serializedVersion: 2
+        x: 10137
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 961255972496b41f0800000000000000
+      internalID: -1059637553091239575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_32
+      rect:
+        serializedVersion: 2
+        x: 10464
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63ddd06fde7dbdc0800000000000000
+      internalID: -3621599027468053650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_33
+      rect:
+        serializedVersion: 2
+        x: 10791
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0374511dcb745420800000000000000
+      internalID: 2617853404098360074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_34
+      rect:
+        serializedVersion: 2
+        x: 11118
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcac3587cfac88870800000000000000
+      internalID: 8685415067083328207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_35
+      rect:
+        serializedVersion: 2
+        x: 11445
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1236cc8cdcceaa1d0800000000000000
+      internalID: -3338595805160512735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_36
+      rect:
+        serializedVersion: 2
+        x: 11772
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66476c0fbf4fcaa30800000000000000
+      internalID: 4228023513107559526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_37
+      rect:
+        serializedVersion: 2
+        x: 12099
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b8b6bdf9cf6d1170800000000000000
+      internalID: 8150793813946185912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_38
+      rect:
+        serializedVersion: 2
+        x: 12426
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a653de6021241e90800000000000000
+      internalID: -7055978293000710494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_39
+      rect:
+        serializedVersion: 2
+        x: 12753
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c089219bbc760e6c0800000000000000
+      internalID: -4116175934735607796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_40
+      rect:
+        serializedVersion: 2
+        x: 13080
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc8f7ffaa6781600800000000000000
+      internalID: 439231440471690449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_41
+      rect:
+        serializedVersion: 2
+        x: 13407
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 354b9f730ce456570800000000000000
+      internalID: 8459254062565143635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_42
+      rect:
+        serializedVersion: 2
+        x: 13734
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57ebba57667bcdf00800000000000000
+      internalID: 1142990056134000245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_43
+      rect:
+        serializedVersion: 2
+        x: 14061
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cfdf12a8f0590810800000000000000
+      internalID: 1732004560502775752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_44
+      rect:
+        serializedVersion: 2
+        x: 14388
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5114d2928fdcbc00800000000000000
+      internalID: 917854175978852702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_45
+      rect:
+        serializedVersion: 2
+        x: 14715
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e33390a812938a30800000000000000
+      internalID: 4216374310619788260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_46
+      rect:
+        serializedVersion: 2
+        x: 15042
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fef58f600bdc9e000800000000000000
+      internalID: 65809825488461807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_47
+      rect:
+        serializedVersion: 2
+        x: 15369
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3fc5dcf96ee9b5f0800000000000000
+      internalID: -740298524744888513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_48
+      rect:
+        serializedVersion: 2
+        x: 15696
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 973ac8c5705821bc0800000000000000
+      internalID: -3813839667765402759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_49
+      rect:
+        serializedVersion: 2
+        x: 16023
+        y: 327
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff07abc59395c1880800000000000000
+      internalID: -8638931882299723521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c05f24419075fe30800000000000000
+      internalID: 4536655968862163137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_51
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc053e000e35e3a0800000000000000
+      internalID: -6636830305901278027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_52
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e6f7007a80f52f0800000000000000
+      internalID: -982056680382566867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_53
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc20cae972facac40800000000000000
+      internalID: 5524983427577414351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_54
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9186247d49445b2c0800000000000000
+      internalID: -4416548453509601255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_55
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c2c0c003bad5090800000000000000
+      internalID: -8044085136564933592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_56
+      rect:
+        serializedVersion: 2
+        x: 1962
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6d14c467f63dc90800000000000000
+      internalID: -7146245629830637884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_57
+      rect:
+        serializedVersion: 2
+        x: 2289
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0489994156a83860800000000000000
+      internalID: 7509935246697661453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_58
+      rect:
+        serializedVersion: 2
+        x: 2616
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b25ad654f1b0ea00800000000000000
+      internalID: 783821998149751478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_59
+      rect:
+        serializedVersion: 2
+        x: 2943
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a008304f7bad09020800000000000000
+      internalID: 2346615889467768842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_60
+      rect:
+        serializedVersion: 2
+        x: 3270
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 813d9f00ae5674e20800000000000000
+      internalID: 3334746104804266776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_61
+      rect:
+        serializedVersion: 2
+        x: 3597
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2618d4f3e7722a950800000000000000
+      internalID: 6458768238784119138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_62
+      rect:
+        serializedVersion: 2
+        x: 3924
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a3a32d4a9f70950800000000000000
+      internalID: 6415370680509545013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_63
+      rect:
+        serializedVersion: 2
+        x: 4251
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 077204d31446616d0800000000000000
+      internalID: -3020116268742072464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_64
+      rect:
+        serializedVersion: 2
+        x: 4578
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3f190a74fbb7f350800000000000000
+      internalID: 6050511283089383229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_65
+      rect:
+        serializedVersion: 2
+        x: 4905
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4e970e9ce30275a0800000000000000
+      internalID: -6525148595307962801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_66
+      rect:
+        serializedVersion: 2
+        x: 5232
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6470aee240cfc2900800000000000000
+      internalID: 661180340213778246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_67
+      rect:
+        serializedVersion: 2
+        x: 5559
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d6b0a8fb225ee40800000000000000
+      internalID: 5684988310675221831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_68
+      rect:
+        serializedVersion: 2
+        x: 5886
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b425a474ab4dd23f0800000000000000
+      internalID: -923848452016025013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_69
+      rect:
+        serializedVersion: 2
+        x: 6213
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39620e57bd45a9e10800000000000000
+      internalID: 2205168269103474323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_70
+      rect:
+        serializedVersion: 2
+        x: 6540
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39387be2fbadfbde0800000000000000
+      internalID: -1315092051511508077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_71
+      rect:
+        serializedVersion: 2
+        x: 6867
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74eca4b97f6557da0800000000000000
+      internalID: -5947752111410590137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_72
+      rect:
+        serializedVersion: 2
+        x: 7194
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6075e663c33130ea0800000000000000
+      internalID: -5907857136847792378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_73
+      rect:
+        serializedVersion: 2
+        x: 7521
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681cb6bf04e35a5a0800000000000000
+      internalID: -6510729237477211770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_74
+      rect:
+        serializedVersion: 2
+        x: 7848
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ec3f633b61c3690800000000000000
+      internalID: -7621191510440817059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_75
+      rect:
+        serializedVersion: 2
+        x: 8175
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b1e4bf76a5716f00800000000000000
+      internalID: 1108296341277434296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_76
+      rect:
+        serializedVersion: 2
+        x: 8502
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8331e082c603c9210800000000000000
+      internalID: 1341000030136177464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_77
+      rect:
+        serializedVersion: 2
+        x: 8829
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15448a50c5e8ef030800000000000000
+      internalID: 3530415683788096593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_78
+      rect:
+        serializedVersion: 2
+        x: 9156
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c5d3b53b98be300800000000000000
+      internalID: 282470805063687170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_79
+      rect:
+        serializedVersion: 2
+        x: 9483
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5db651ecfd7d4ef0800000000000000
+      internalID: -122303089803346595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_80
+      rect:
+        serializedVersion: 2
+        x: 9810
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e6efb5f04e6c28e0800000000000000
+      internalID: -1716876132655044891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_81
+      rect:
+        serializedVersion: 2
+        x: 10137
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c105576d51a5389d0800000000000000
+      internalID: -2773273895691268068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_82
+      rect:
+        serializedVersion: 2
+        x: 10464
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eaff143159e144c0800000000000000
+      internalID: -4304903233813349662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_83
+      rect:
+        serializedVersion: 2
+        x: 10791
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12a2e22a51d49240800000000000000
+      internalID: 4797689688118960666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_84
+      rect:
+        serializedVersion: 2
+        x: 11118
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e83a4be4372038d0800000000000000
+      internalID: -2868749854395713308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_85
+      rect:
+        serializedVersion: 2
+        x: 11445
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af5040b69a0f5bec0800000000000000
+      internalID: -3551668120676203014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_86
+      rect:
+        serializedVersion: 2
+        x: 11772
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cf21bd7feab0b560800000000000000
+      internalID: 7327562131500511169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_87
+      rect:
+        serializedVersion: 2
+        x: 12099
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff10ce2323f18a70800000000000000
+      internalID: 8827604077056630771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_88
+      rect:
+        serializedVersion: 2
+        x: 12426
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6c56cb6f9188e8e0800000000000000
+      internalID: -1663937540605453204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_89
+      rect:
+        serializedVersion: 2
+        x: 12753
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8644d134a9074e20800000000000000
+      internalID: 3334644649906423435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_90
+      rect:
+        serializedVersion: 2
+        x: 13080
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2f32c64c47503f0800000000000000
+      internalID: -935212960632802592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_91
+      rect:
+        serializedVersion: 2
+        x: 13407
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e64a70147b9d580800000000000000
+      internalID: -8801802506789949910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_92
+      rect:
+        serializedVersion: 2
+        x: 13734
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d3070ff2f6d478d0800000000000000
+      internalID: -2849416325069601834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_93
+      rect:
+        serializedVersion: 2
+        x: 14061
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f62f18d28babc1e0800000000000000
+      internalID: -2176457416443484428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_94
+      rect:
+        serializedVersion: 2
+        x: 14388
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c7c088b76cb4a890800000000000000
+      internalID: -7447620730100856887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_95
+      rect:
+        serializedVersion: 2
+        x: 14715
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e985cf4a54669a20800000000000000
+      internalID: 3068750535147751907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_96
+      rect:
+        serializedVersion: 2
+        x: 15042
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7dfd89a8d440e110800000000000000
+      internalID: 1288105190776241531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_97
+      rect:
+        serializedVersion: 2
+        x: 15369
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74430c1308bbf0290800000000000000
+      internalID: -7921907060256525241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_98
+      rect:
+        serializedVersion: 2
+        x: 15696
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81bec4b0da5df3d60800000000000000
+      internalID: 7872245612862565144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpicyPlanet_99
+      rect:
+        serializedVersion: 2
+        x: 16023
+        y: 0
+        width: 327
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc36a8be5f3d8350800000000000000
+      internalID: 6020537952921599159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
