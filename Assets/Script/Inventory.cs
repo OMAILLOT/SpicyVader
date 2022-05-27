@@ -98,11 +98,16 @@ public class Inventory : MonoBehaviour
 
     public void UpdateTireRate()
     {
-        gameManager.RateShoot *= gameManager.boostGreenChillyPeper;
-        if (gameManager.RateShoot <= 0.3)
+        if (gameManager.RateShoot <= 0.5 && gameManager.isRedPlayer)
         {
             gameManager.isMaxTireRate = true;
-            gameManager.RateShoot = 0.3f;
+            gameManager.RateShoot = 0.5f;
+        } else if (gameManager.RateShoot <= 0.3 && gameManager.isGreenPlayer && gameManager.PlayerLevel == 5)
+        {
+            gameManager.isMaxTireRate = true;
+        }  else if (gameManager.isRedPlayer)
+        {
+            gameManager.RateShoot -= gameManager.boostGreenChillyPeper;
         }
 
         totalTireRate *= 1 - gameManager.boostGreenChillyPeper + 1;

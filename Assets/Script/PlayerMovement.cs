@@ -11,8 +11,6 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-    private float nextActionTime = 0.0f;
-    [Space(10)]
     public SpriteRenderer graphics;
     public float invicibilityFlashDelay = 0.2f;
     public float invicibilityDelay = 3f;
@@ -22,8 +20,6 @@ public class PlayerMovement : MonoBehaviour
     [Space(10)]
     public AudioClip playerHit;
     public AudioClip levelUpSong;
-    public AudioClip[] audios;
-    private int musicIndex;
     private Vector3 goToPostion = new Vector3(0,0,0);
     [Space(10)]
     public ParticleSystem[] playerParticles;
@@ -31,11 +27,6 @@ public class PlayerMovement : MonoBehaviour
     public TextMeshProUGUI level;
     public TextMeshPro levelUpText;
     [Space(10)]
-    public string tagBullet = "bullet";
-    public 
-
-    ObjectPooler objectPooler;
-
 
     GameManager gameManager;
     private void Awake()
@@ -48,19 +39,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        objectPooler = ObjectPooler.instance;
         gameManager = GameManager.Instance;
-        nextActionTime = gameManager.RateShoot + gameManager.timeForTuto;
     }
     private void FixedUpdate()
     {
-        if (Time.time >= gameManager.timeForTuto )
-        {
-
-            if (Time.time > nextActionTime)
-            {
-                StartCoroutine(Shoot());
-            }
 
         if (Input.touchCount > 0)
         {
@@ -70,77 +52,9 @@ public class PlayerMovement : MonoBehaviour
             Vector3.Lerp(transform.position, goToPostion,100f);
             transform.position = Vector3.MoveTowards(transform.position, goToPostion, gameManager.playerSpeed * Time.deltaTime);
         }
-
-        }
     }
 
-
-    IEnumerator Shoot()
-    {
-        nextActionTime += gameManager.RateShoot;
-        musicIndex = Random.Range(0, audios.Length);
-        AudioManager.instance.PlayClipAt(audios[musicIndex], transform.position);
-        switch (gameManager.PlayerLevel)
-        {
-            case 1:
-                objectPooler.SpawnFromPool("bullet", transform.position, Quaternion.identity);
-                if (gameManager.countRedHotChillyPeperEat >= gameManager.howManyRedCountToLevelUp)
-                {
-                    gameManager.howManyRedCountToLevelUp *= 2f;
-                    levelUp();
-                } 
-                break;
-            case 2:
-                objectPooler.SpawnFromPool("bullet", new Vector3(transform.position.x - 0.3f, transform.position.y, transform.position.z), Quaternion.identity);
-                objectPooler.SpawnFromPool("bullet", new Vector3(transform.position.x + 0.3f, transform.position.y, transform.position.z), Quaternion.identity);
-                if (gameManager.countRedHotChillyPeperEat >= gameManager.howManyRedCountToLevelUp)
-                {
-                    gameManager.howManyRedCountToLevelUp *= 1.5f;
-                    levelUp();
-                }
-                break;
-            case 3:
-                objectPooler.SpawnFromPool("bullet", new Vector3(transform.position.x - 0.3f, transform.position.y, transform.position.z), Quaternion.identity);
-                objectPooler.SpawnFromPool("bullet", new Vector3(transform.position.x, transform.position.y + 0.2f, transform.position.z), Quaternion.identity);
-                objectPooler.SpawnFromPool("bullet", new Vector3(transform.position.x + 0.3f, transform.position.y, transform.position.z), Quaternion.identity);
-                if (gameManager.countRedHotChillyPeperEat >= gameManager.howManyRedCountToLevelUp)
-                {
-                    gameManager.howManyRedCountToLevelUp *= 1.33f;
-                    levelUp();
-                }
-                break;
-            case 4:
-                objectPooler.SpawnFromPool("bullet", new Vector3(transform.position.x - 0.3f, transform.position.y, transform.position.z), Quaternion.identity);
-                objectPooler.SpawnFromPool("bullet", new Vector3(transform.position.x - 0.15f, transform.position.y + 0.2f, transform.position.z), Quaternion.identity);
-                objectPooler.SpawnFromPool("bullet", new Vector3(transform.position.x + 0.15f, transform.position.y + 0.2f, transform.position.z), Quaternion.identity);
-                objectPooler.SpawnFromPool("bullet", new Vector3(transform.position.x + 0.3f, transform.position.y, transform.position.z), Quaternion.identity);
-                if (gameManager.countRedHotChillyPeperEat >= gameManager.howManyRedCountToLevelUp)
-                {
-                    gameManager.howManyRedCountToLevelUp *= 2f;
-                    levelUp();
-                }
-                break;
-            case 5:
-                objectPooler.SpawnFromPool("bullet", new Vector3(transform.position.x - 0.3f, transform.position.y, transform.position.z), Quaternion.identity);
-                objectPooler.SpawnFromPool("bullet", new Vector3(transform.position.x - 0.15f, transform.position.y + 0.2f, transform.position.z), Quaternion.identity);
-                objectPooler.SpawnFromPool("bullet", new Vector3(transform.position.x, transform.position.y + 0.35f, transform.position.z), Quaternion.identity);
-                objectPooler.SpawnFromPool("bullet", new Vector3(transform.position.x + 0.15f, transform.position.y + 0.2f, transform.position.z), Quaternion.identity);
-                objectPooler.SpawnFromPool("bullet", new Vector3(transform.position.x + 0.3f, transform.position.y, transform.position.z), Quaternion.identity);
-                break;
-        }
-        yield return null;
-    }
-    private void spawnBullet(int level)
-    {
-        string tag = "";
-        
-        for (int i = 0; i <= level; i++)
-        {
-
-        }
-    }
-
-    private void levelUp()
+    public void levelUp()
     {
         AudioManager.instance.PlayClipAt(levelUpSong, transform.position);
         switch(gameManager.PlayerLevel)
@@ -164,8 +78,32 @@ public class PlayerMovement : MonoBehaviour
         Inventory.instance.UpdateDamageWithoutIncrease();
         Instantiate(levelUpText);
         Instantiate(playerParticles[2], transform.position, Quaternion.identity);
+    }
 
-
+    public void greenLevelUp()
+    {
+        AudioManager.instance.PlayClipAt(levelUpSong, transform.position);
+        gameManager.RateShoot = 0.3f - gameManager.PlayerLevel * 0.05f;
+        if (gameManager.isRedPlayer)
+        {
+            gameManager.PlayerDamage = 5;
+        } else
+        {
+            gameManager.PlayerDamage -= 2;
+            if (gameManager.PlayerDamage <= 3)
+            {
+                gameManager.PlayerDamage = 3;
+            }
+        }
+        gameManager.isGreenPlayer = true;
+        gameManager.isRedPlayer = false;
+        gameManager.boostRedChillyPeper = 1;
+        gameManager.PlayerLevel++;
+        level.text = gameManager.PlayerLevel.ToString();
+        Inventory.instance.UpdateTireRateWithoutIncrease();
+        Inventory.instance.UpdateDamageWithoutIncrease();
+        Instantiate(levelUpText);
+        Instantiate(playerParticles[2], transform.position, Quaternion.identity);
     }
 
 

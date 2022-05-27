@@ -25,7 +25,6 @@ public class Asteroids : MonoBehaviour, IPooledObject
     private int musicIndex;
     [Space(10)]
     public float chanceToFocusPlayer = 0.3f;
-    private bool isFocusPlayer = false;
     private float rnd;
     private float randomTarget;
 
@@ -121,7 +120,7 @@ public class Asteroids : MonoBehaviour, IPooledObject
             PlayerMovement.instance.PlayerHit();
         }
 
-        if (collision.CompareTag("bullet"))
+        if (collision.CompareTag("bullet") || collision.CompareTag("TinyBulletPlayer"))
         {
             PV -= gameManager.PlayerDamage;
         }

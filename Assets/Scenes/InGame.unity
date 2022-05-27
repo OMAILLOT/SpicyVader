@@ -2432,7 +2432,7 @@ MonoBehaviour:
   speedChillyPeper: 1.5
   boostRedChillyPeper: 5
   baseBoostRedChillyPeper: 0
-  boostGreenChillyPeper: 0.8
+  boostGreenChillyPeper: 0.07
   spawnRate: 0
   isCanSpawn: 0
   isGameOver: 0
@@ -3586,6 +3586,36 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1703147453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703147451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b3c56af1093530438080a47a71bec4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audios:
+  - {fileID: 8300000, guid: 76d9bd028361fca49af719d637cf66cf, type: 3}
+  - {fileID: 8300000, guid: ce7a25a282e04934fbcc5772e8c4a585, type: 3}
+  - {fileID: 8300000, guid: 41a65cfad9c156149976c92b74cc439e, type: 3}
+  - {fileID: 8300000, guid: e58ad46f5ea50ca4ab48e61aff1fcab8, type: 3}
+  tagBullet: bullet
+  playerMovement: {fileID: 1703147455}
+--- !u!114 &1703147455 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8660736249093744250, guid: c146581418b61d64bae91146aa4b71cd, type: 3}
+  m_PrefabInstance: {fileID: 8660736249093744248}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703147451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d3cdb621f33a5c4b86ced68f783b877, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1716751357
 GameObject:
   m_ObjectHideFlags: 0
@@ -3833,7 +3863,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1796151116
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3873,7 +3903,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 695689048c9d8b5408c8d1b998ab53bb, type: 3}
   m_Color: {r: 0.6698113, g: 0.6698113, b: 0.6698113, a: 1}
   m_FlipX: 0
