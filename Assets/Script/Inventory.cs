@@ -83,6 +83,9 @@ public class Inventory : MonoBehaviour
 
     public void UpdateDamage()
     {
+        if (gameManager.isRedPlayer)
+        {
+
         gameManager.PlayerDamage += gameManager.boostRedChillyPeper;
         string damageText = ((gameManager.PlayerDamage * gameManager.PlayerLevel)).ToString();
         string finalText = "";
@@ -94,6 +97,11 @@ public class Inventory : MonoBehaviour
             }
         }
         DamageText.text = finalText;
+        } else
+        {
+            gameManager.PlayerDamage += gameManager.boostRedChillyPeper;
+            DamageText.text = gameManager.PlayerDamage.ToString();
+        }
     }
 
     public void UpdateTireRate()
@@ -109,16 +117,20 @@ public class Inventory : MonoBehaviour
         {
             gameManager.RateShoot -= gameManager.boostGreenChillyPeper;
         }
-
+        /*
         totalTireRate *= 1 - gameManager.boostGreenChillyPeper + 1;
         string stringTotal = totalTireRate.ToString();
         string tireRateText = stringTotal[0] + "," + stringTotal[2];
         //string tireRateText = (totalTireRate).ToString();
-        TireRateText.text = tireRateText;
+        */
+        TireRateText.text = gameManager.RateShoot.ToString();
     }
 
     public void UpdateDamageWithoutIncrease()
     {
+        if (gameManager.isRedPlayer)
+        {
+
         string damageText = ((gameManager.PlayerDamage * gameManager.PlayerLevel)).ToString();
         string finalText = "";
         for (int i = 0; i < damageText.Length; i++)
@@ -129,10 +141,16 @@ public class Inventory : MonoBehaviour
             }
         }
         DamageText.text = finalText;
+        } else
+        {
+            DamageText.text = gameManager.PlayerDamage.ToString();
+        }
     }
 
     public void UpdateTireRateWithoutIncrease()
     {
-        TireRateText.text = (totalTireRate).ToString();
+        //TireRateText.text = (totalTireRate).ToString();
+        TireRateText.text = gameManager.RateShoot.ToString();
+
     }
 }

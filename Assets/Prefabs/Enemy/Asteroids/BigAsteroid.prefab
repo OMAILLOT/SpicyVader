@@ -128,7 +128,7 @@ MonoBehaviour:
   playerLife: {fileID: 9191754157201463151, guid: 369857464b7918a47820dde7c5c93270, type: 3}
   PV: 90
   speed: 1.5
-  dropChance: 0.09
+  dropChance: 0.15
   dropLifeChance: 0.01
   audios:
   - {fileID: 8300000, guid: 8b9164f9af0b9bc4aa58a32be84bb505, type: 3}
