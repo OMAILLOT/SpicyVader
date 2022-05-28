@@ -6,13 +6,22 @@ public class BasicShip : MonoBehaviour
 {
     public float PV = 50;
     public float speed = 3;
+    public float TireRate;
     public float dropChance = 0.3f;
     public float dropLifeChance = 0.05f;
+    public ParticleSystem particleShoot;
+    public ParticleSystem Explosion;
+    public AudioClip[] ExplosionSound;
     [Space(5)]
     //public GameObject mecanicPiece;
     public GameObject playerLife;
     public GameObject[] grid;
+    public GameObject bullet;
+    public AudioClip[] shootAudios;
+    private int musicIndex;
 
+
+    float nextActionTime = 0.0f;
     WorldLevelManager worldLevelManager;
     SpawnBasicShip spawnBasicShip;
     int howManyCell;
@@ -31,10 +40,11 @@ public class BasicShip : MonoBehaviour
         PV += worldLevelManager.basicShipPV;
         speed += worldLevelManager.basicShipSpeed;
         dropChance += worldLevelManager.basicShipDropChance;
+       
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (!stopMove)
         {
@@ -42,7 +52,23 @@ public class BasicShip : MonoBehaviour
             if (transform.position == grid[whatCell].transform.position)
             {
                 stopMove = true;
-                Shoot();
+                nextActionTime = Time.time+0.5f;
+                particleShoot.transform.position = new Vector3(transform.position.x,transform.position.y - 0.3f, transform.position.z);
+                
+            }
+        } else
+        {
+            if (PV <= 0)
+            {
+                Instantiate(Explosion, transform.position, Quaternion.identity);
+                musicIndex = Random.Range(0, ExplosionSound.Length);
+                AudioManager.instance.PlayClipAt(ExplosionSound[musicIndex], transform.position);
+                Destroy(particleShoot);
+                Destroy(gameObject);
+            }
+            if (Time.time >= nextActionTime)
+            {
+                StartCoroutine(Shoot());
             }
         }
 
@@ -82,8 +108,27 @@ public class BasicShip : MonoBehaviour
         
     }
 
-    void Shoot()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("je shoot");
+        if (collision.CompareTag("bullet") || collision.CompareTag("TinyBulletPlayer"))
+        {
+            PV -= GameManager.Instance.PlayerDamage;
+        }
+
+        if (collision.CompareTag("Player"))
+        {
+            PlayerMovement.instance.PlayerHit();
+        }
+    }
+
+    IEnumerator Shoot()
+    {
+        Instantiate(particleShoot);
+        nextActionTime += TireRate + Random.Range(0,1f);
+        musicIndex = Random.Range(0, shootAudios.Length);
+        AudioManager.instance.PlayClipAt(shootAudios[musicIndex], transform.position);
+        bullet.transform.position = transform.position;
+        Instantiate(bullet);
+        yield return null;
     }
 }
