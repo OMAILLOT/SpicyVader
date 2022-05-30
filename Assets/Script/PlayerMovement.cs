@@ -86,7 +86,7 @@ public class PlayerMovement : MonoBehaviour
         gameManager.RateShoot = 0.3f - gameManager.PlayerLevel * 0.05f;
         if (gameManager.isRedPlayer)
         {
-            gameManager.PlayerDamage = 5;
+            gameManager.PlayerDamage = 9;
         } else
         {
             gameManager.PlayerDamage -= 2;
@@ -97,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
         }
         gameManager.isGreenPlayer = true;
         gameManager.isRedPlayer = false;
-        gameManager.boostRedChillyPeper = 1;
+        gameManager.boostRedChillyPeper = 1.5f;
         gameManager.PlayerLevel++;
         level.text = gameManager.PlayerLevel.ToString();
         Inventory.instance.UpdateTireRateWithoutIncrease();

@@ -58,12 +58,17 @@ public class BasicShip : MonoBehaviour
             }
         } else
         {
+            if (transform.position.y >= 8)
+            {
+                Destroy(gameObject);
+            }
             if (PV <= 0)
             {
                 Instantiate(Explosion, transform.position, Quaternion.identity);
                 musicIndex = Random.Range(0, ExplosionSound.Length);
                 AudioManager.instance.PlayClipAt(ExplosionSound[musicIndex], transform.position);
-                Destroy(particleShoot);
+                spawnBasicShip.countShipDestroy++;
+               // Destroy(particleShoot);
                 Destroy(gameObject);
             }
             if (Time.time >= nextActionTime)
@@ -123,7 +128,7 @@ public class BasicShip : MonoBehaviour
 
     IEnumerator Shoot()
     {
-        Instantiate(particleShoot);
+        //Instantiate(particleShoot);
         nextActionTime += TireRate + Random.Range(0,1f);
         musicIndex = Random.Range(0, shootAudios.Length);
         AudioManager.instance.PlayClipAt(shootAudios[musicIndex], transform.position);

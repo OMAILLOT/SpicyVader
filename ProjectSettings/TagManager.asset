@@ -21,6 +21,8 @@ TagManager:
   - TinyBulletPlayer
   - GreenChillyPeper
   - RedHotChillyPeper
+  - BasicShip
+  - LifeItem
   layers:
   - Default
   - TransparentFX

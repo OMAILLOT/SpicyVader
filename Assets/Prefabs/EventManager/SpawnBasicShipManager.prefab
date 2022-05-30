@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4891150170548372414}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.662668, y: 6.401669, z: -859.81494}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -46,3 +46,5 @@ MonoBehaviour:
   lineTake: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   balisesSpawn: []
   basicShip: {fileID: 6073784870238915783, guid: dc301bf99b39bc341b22157723f114ac, type: 3}
+  timeEvent: 25
+  countShipDestroy: 0

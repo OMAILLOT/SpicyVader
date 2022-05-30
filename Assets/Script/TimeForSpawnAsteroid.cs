@@ -29,7 +29,7 @@ public class TimeForSpawnAsteroid : MonoBehaviour
     private GameObject currentSpecialAsteroid;
     private int indexSpecialAsteroid;
     private int whatBalise;
-
+    int countNoEvent = 0;
 
     GameManager gameManager;
     WorldLevelManager worldLevelManager;
@@ -66,10 +66,17 @@ public class TimeForSpawnAsteroid : MonoBehaviour
                 {
                     chanceToSpawnSpecialAsteroid *= 0.9f;
                 }
-                if (Random.Range(0f, 1f) <= eventManager.chanceEvent && eventManager.isEvent == false)
+                if (Random.Range(0f, 1f) <= eventManager.chanceEvent && eventManager.isEvent == false && !eventManager.isJustEvent)
                 {
                     eventManager.isEvent = true;
                     eventManager.StartEvent();
+                } else
+                {
+                    countNoEvent++;
+                    if (countNoEvent >= 2)
+                    {
+                        eventManager.isJustEvent = false;
+                    }
                 }
             } else
             {

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -2117229509151738417}
   m_Layer: 0
   m_Name: BasicShipEnemy
-  m_TagString: Untagged
+  m_TagString: BasicShip
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PV: 50
   speed: 3
-  TireRate: 1.2
+  TireRate: 1.7
   dropChance: 0
   dropLifeChance: 0.05
   particleShoot: {fileID: 1754438387845391117, guid: 93cad5f57d0928746a84c0fb42e452c1, type: 3}

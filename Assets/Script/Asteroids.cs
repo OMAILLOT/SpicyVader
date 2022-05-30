@@ -80,6 +80,7 @@ public class Asteroids : MonoBehaviour, IPooledObject
 
     void FixedUpdate()
     {
+        
 
         if (transform.position.y < -7.6)
             gameObject.SetActive(false);

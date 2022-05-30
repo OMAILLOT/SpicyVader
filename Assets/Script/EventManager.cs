@@ -9,7 +9,10 @@ public class EventManager : MonoBehaviour
     public float chanceEvent;
     [Space(5)]
     public GameObject[] events;
+    public bool isJustEvent = false;
+    public GameObject[] items;
     private int indexEvent;
+    public bool isItemTaken = false;
 
     private void Start()
     {
@@ -18,9 +21,22 @@ public class EventManager : MonoBehaviour
 
     public void StartEvent()
     {
-
-        indexEvent = Random.Range(0, events.Length);
-        Instantiate(events[indexEvent]);
+        if (!isJustEvent)
+        {
+            isItemTaken = false;
+            indexEvent = Random.Range(0, events.Length);
+            Instantiate(events[indexEvent]);
+        }
         
+    }
+
+    public void winEvent()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            int index = Random.Range(0, items.Length);
+            items[index].transform.position = new Vector3(-12 + i*1.5f, 8f, 0f);
+            Instantiate(items[index]);
+        }
     }
 }
