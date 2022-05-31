@@ -105,7 +105,14 @@ public class Inventory : MonoBehaviour
         } else
         {
             gameManager.PlayerDamage += gameManager.boostRedChillyPeper;
-            DamageText.text = gameManager.PlayerDamage.ToString();
+            if (gameManager.PlayerDamage >= 15)
+            {
+                gameManager.PlayerDamage = 15;
+                DamageText.text = "Max";
+            } else
+            {
+                DamageText.text = gameManager.PlayerDamage.ToString();
+            }
         }
     }
 
