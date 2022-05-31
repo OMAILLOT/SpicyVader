@@ -38,6 +38,23 @@ public class WorldLevelManager : MonoBehaviour
     void Start()
     {
         gameManager = GameManager.Instance;
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void updateWorldLevel()
+    {
+        asteroidsPV += increaseAsteroidsPv;
+        asteroidsSpeed += increaseAsteroidsSpeed;
+
+        basicShipPV += increaseBasicShipPv;
+        basicShipSpeed += increaseBasicShipSpeed;
+
         switch (basicShipEventlevel)
         {
             case 1:
@@ -59,20 +76,5 @@ public class WorldLevelManager : MonoBehaviour
                 }
                 break;
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void updateWorldLevel()
-    {
-        asteroidsPV += increaseAsteroidsPv;
-        asteroidsSpeed += increaseAsteroidsSpeed;
-
-        basicShipPV += increaseBasicShipPv;
-        basicShipSpeed += increaseBasicShipSpeed;
     }
 }
