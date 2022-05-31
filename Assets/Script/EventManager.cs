@@ -13,6 +13,7 @@ public class EventManager : MonoBehaviour
     public GameObject[] items;
     private int indexEvent;
     public bool isItemTaken = false;
+    public bool chooseItems = false;
 
     private void Start()
     {
@@ -32,6 +33,7 @@ public class EventManager : MonoBehaviour
 
     public void winEvent()
     {
+        chooseItems = true;
         for (int i = 0; i < 3; i++)
         {
             int index = Random.Range(0, items.Length);

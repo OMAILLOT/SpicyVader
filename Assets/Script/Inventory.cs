@@ -18,6 +18,7 @@ public class Inventory : MonoBehaviour
     public Image[] lifeImages;
     public TextMeshProUGUI OverFiveLifeText;
     public TextMeshProUGUI OverFiveLifeNumber;
+    public EventManager eventManager;
 
     public static Inventory instance;
     private float baseTireRate;
@@ -36,6 +37,7 @@ public class Inventory : MonoBehaviour
 
     private void Start()
     {
+        eventManager = GameObject.FindObjectOfType(typeof(EventManager)) as EventManager;
         gameManager = GameManager.Instance;
         BestScoreText.text = Mathf.Round(PlayerPrefs.GetFloat("score")).ToString();
         baseTireRate = gameManager.RateShoot;
@@ -77,8 +79,11 @@ public class Inventory : MonoBehaviour
 
     public void updateScore()
     {
-        gameManager.score += Time.deltaTime;
-        ScoreText.text = Mathf.Round(gameManager.score).ToString();
+        if (!eventManager.chooseItems)
+        {
+            gameManager.score += Time.deltaTime;
+            ScoreText.text = Mathf.Round(gameManager.score).ToString();
+        }
     }
 
     public void UpdateDamage()

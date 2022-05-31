@@ -2592,7 +2592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEvent: 0
-  chanceEvent: 0.2
+  chanceEvent: 0.4
   events:
   - {fileID: 4891150170548372414, guid: 8306de72cef01b64ca81bd467df2a1a8, type: 3}
   isJustEvent: 0
