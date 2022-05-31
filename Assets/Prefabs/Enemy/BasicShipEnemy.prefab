@@ -119,7 +119,7 @@ MonoBehaviour:
   dropChance: 0
   dropLifeChance: 0.05
   particleShoot: {fileID: 1754438387845391117, guid: 93cad5f57d0928746a84c0fb42e452c1, type: 3}
-  Explosion: {fileID: 8464494934522095380, guid: c21bd7e76adbe67408a96780e69a2cf0, type: 3}
+  Explosion: {fileID: 8464494934522095380, guid: 19cf0b6cd13b4b34bb18cfba81507ed7, type: 3}
   ExplosionSound:
   - {fileID: 8300000, guid: 8b9164f9af0b9bc4aa58a32be84bb505, type: 3}
   - {fileID: 8300000, guid: b908bee8f9a84da4ab3190d3c59513eb, type: 3}
