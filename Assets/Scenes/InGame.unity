@@ -2579,6 +2579,7 @@ MonoBehaviour:
   - {fileID: 909347048}
   OverFiveLifeText: {fileID: 1045573159}
   OverFiveLifeNumber: {fileID: 1340553998}
+  eventManager: {fileID: 0}
 --- !u!114 &1261249514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2601,6 +2602,7 @@ MonoBehaviour:
   - {fileID: 1196121043017581141, guid: 4414712142a08e64cbb0bbf5d7385bed, type: 3}
   - {fileID: 3711496389307243457, guid: 2fd67bdc46fb94347ac9b0172816dc5c, type: 3}
   isItemTaken: 0
+  chooseItems: 0
 --- !u!114 &1261249515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6349,6 +6351,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4442554700911050294, guid: c146581418b61d64bae91146aa4b71cd, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442554700911050294, guid: c146581418b61d64bae91146aa4b71cd, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442554700911050294, guid: c146581418b61d64bae91146aa4b71cd, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6156234093824138344, guid: c146581418b61d64bae91146aa4b71cd, type: 3}
       propertyPath: m_Name
       value: Player
@@ -6361,6 +6375,10 @@ PrefabInstance:
       propertyPath: level
       value: 
       objectReference: {fileID: 1716751359}
+    - target: {fileID: 8660736249093744250, guid: c146581418b61d64bae91146aa4b71cd, type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 8660736249093744252}
     - target: {fileID: 8660736249093744250, guid: c146581418b61d64bae91146aa4b71cd, type: 3}
       propertyPath: _camera
       value: 

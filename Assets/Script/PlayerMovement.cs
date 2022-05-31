@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
     public TextMeshProUGUI level;
     public TextMeshPro levelUpText;
     [Space(10)]
-    SpriteRenderer sprite;
+    public SpriteRenderer sprite;
 
     GameManager gameManager;
     private void Awake()
@@ -40,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        sprite = GetComponentInChildren<SpriteRenderer>();
+        //sprite = GetComponentInChildren<SpriteRenderer>();
         gameManager = GameManager.Instance;
     }
     private void FixedUpdate()
