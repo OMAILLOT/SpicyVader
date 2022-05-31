@@ -73,6 +73,7 @@ public class ItemsWinEvent : MonoBehaviour
                     break;
             }
             eventManager.isItemTaken = true;
+            eventManager.chooseItems = false;
             Destroy(gameObject);
         }
     }

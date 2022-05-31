@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     public TextMeshProUGUI level;
     public TextMeshPro levelUpText;
     [Space(10)]
+    SpriteRenderer sprite;
 
     GameManager gameManager;
     private void Awake()
@@ -39,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        sprite = GetComponentInChildren<SpriteRenderer>();
         gameManager = GameManager.Instance;
     }
     private void FixedUpdate()
@@ -95,6 +97,7 @@ public class PlayerMovement : MonoBehaviour
                 gameManager.PlayerDamage = 3;
             }
         }
+        sprite.color = new Color(152,255,105);
         gameManager.isGreenPlayer = true;
         gameManager.isRedPlayer = false;
         gameManager.boostRedChillyPeper = 1.5f;
