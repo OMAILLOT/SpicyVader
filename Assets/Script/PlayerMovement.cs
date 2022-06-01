@@ -28,6 +28,8 @@ public class PlayerMovement : MonoBehaviour
     public TextMeshPro levelUpText;
     [Space(10)]
     public SpriteRenderer sprite;
+    public GameObject fadeHit;
+
 
     GameManager gameManager;
     private void Awake()
@@ -114,6 +116,9 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!isInvincible)
         {   
+            
+            fadeHit.SetActive(true);
+
             playerParticles[0].transform.position = transform.position;
             Instantiate(playerParticles[0]);
             gameManager.PlayerLife -= 1;
@@ -126,10 +131,12 @@ public class PlayerMovement : MonoBehaviour
             }
             else
             {
+                
                 PlayerDeath();
                 return;
             }
         }
+        
     }
 
     public IEnumerator InvicibilityFlash()
