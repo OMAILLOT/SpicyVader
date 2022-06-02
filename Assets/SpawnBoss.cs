@@ -29,6 +29,7 @@ public class SpawnBoss : MonoBehaviour
 
     IEnumerator WaitForSpawnBoss()
     {
+        Debug.Log("boss activé");
         lightSpeedParticle.gameObject.SetActive(true);
         lightSpeedParticle.Play();
         yield return new WaitForSeconds(9);

@@ -55,7 +55,7 @@ public class TimeForSpawnAsteroid : MonoBehaviour
         if (Time.time >= nextActionTime)
         {
             nextActionTime += timeToRespawn;
-            if (Delay <= 0)
+            if (Delay <= 0 && !eventManager.isEvent)
             {
                 worldLevelManager.updateWorldLevel();
                 timeToRespawn *= reduceTimeToRespawn;
@@ -84,7 +84,10 @@ public class TimeForSpawnAsteroid : MonoBehaviour
                 }
             } else
             {
-                 Delay--;
+                if (Delay > 0)
+                {
+                    Delay--;
+                }
             }
             if (!eventManager.isEvent)
             {
