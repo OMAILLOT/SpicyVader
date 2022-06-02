@@ -6,6 +6,7 @@ public class EventManager : MonoBehaviour
 {
     private GameManager gameManager;
     public bool isEvent;
+    public bool isEventBoss;
     public float chanceEvent;
     [Space(5)]
     public GameObject[] events;
@@ -15,9 +16,11 @@ public class EventManager : MonoBehaviour
     private int indexEvent;
     public bool isItemTaken = false;
     public bool chooseItems = false;
+    public static EventManager instance;
 
     private void Start()
     {
+        instance = this;
         gameManager = GameManager.Instance;
     }
 
@@ -25,7 +28,8 @@ public class EventManager : MonoBehaviour
     {
         if (gameManager.worldLevel == 10 || gameManager.worldLevel >= 10 && gameManager.worldLevel % 5 == 0)
         {
-            Instantiate(eventBoss);
+            isEventBoss = true;
+            eventBoss.SetActive(true);
         } else
         {
             if (!isJustEvent)

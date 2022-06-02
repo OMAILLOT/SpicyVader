@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5953544771846633024}
+  - component: {fileID: 9154441411749350355}
   m_Layer: 0
   m_Name: SpawnBossManager
   m_TagString: Untagged
@@ -30,3 +31,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9154441411749350355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5910915221079212214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b02e78ef6583024ab9aa2c4565cb06a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allBoss:
+  - {fileID: 823828845645148240, guid: dec03501b2f45774cbe84fafb116c8d5, type: 3}
+  SpawnBaliseBoss: {fileID: 6582450827637186648, guid: ec60abc07b3f2214f8d2570cd4a6c03c, type: 3}
+  lightSpeedParticle: {fileID: 0}
+  spaceParticle: {fileID: 0}
+  Planets:
+  - {fileID: 0}
