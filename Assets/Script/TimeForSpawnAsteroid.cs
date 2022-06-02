@@ -66,7 +66,11 @@ public class TimeForSpawnAsteroid : MonoBehaviour
                 {
                     chanceToSpawnSpecialAsteroid *= 0.9f;
                 }
-                if (Random.Range(0f, 1f) <= eventManager.chanceEvent && eventManager.isEvent == false && !eventManager.isJustEvent)
+                if (
+                    (Random.Range(0f, 1f) <= eventManager.chanceEvent && eventManager.isEvent == false && !eventManager.isJustEvent) || 
+                    gameManager.worldLevel == 10 || 
+                    gameManager.worldLevel >= 10 && gameManager.worldLevel % 5 == 0 
+                    )
                 {
                     eventManager.isEvent = true;
                     eventManager.StartEvent();

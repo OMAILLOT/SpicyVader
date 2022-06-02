@@ -31,7 +31,6 @@ public class SpawnBasicShip : MonoBehaviour
         {
             lineTake[i] = 0;
         }
-        Debug.Log("Start Basic Ship Event");
         StartCoroutine(SpawnShip());
     }
 

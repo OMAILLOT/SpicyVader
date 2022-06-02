@@ -11,6 +11,7 @@ public class EventManager : MonoBehaviour
     public GameObject[] events;
     public bool isJustEvent = false;
     public GameObject[] items;
+    public GameObject eventBoss;
     private int indexEvent;
     public bool isItemTaken = false;
     public bool chooseItems = false;
@@ -22,11 +23,17 @@ public class EventManager : MonoBehaviour
 
     public void StartEvent()
     {
-        if (!isJustEvent)
+        if (gameManager.worldLevel == 10 || gameManager.worldLevel >= 10 && gameManager.worldLevel % 5 == 0)
         {
-            isItemTaken = false;
-            indexEvent = Random.Range(0, events.Length);
-            Instantiate(events[indexEvent]);
+            Instantiate(eventBoss);
+        } else
+        {
+            if (!isJustEvent)
+            {
+                isItemTaken = false;
+                indexEvent = Random.Range(0, events.Length);
+                Instantiate(events[indexEvent]);
+            }
         }
         
     }
