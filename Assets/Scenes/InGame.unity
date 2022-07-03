@@ -5928,6 +5928,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 858509039880649329, guid: 6f6fdca4c2365cc44bd21c26ffd507d8, type: 3}
+      propertyPath: TrailModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 858509039880649329, guid: 6f6fdca4c2365cc44bd21c26ffd507d8, type: 3}
       propertyPath: TrailModule.shadowBias
       value: 0
       objectReference: {fileID: 0}
@@ -5985,7 +5989,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 858509039880649330, guid: 6f6fdca4c2365cc44bd21c26ffd507d8, type: 3}
       propertyPath: m_SortingOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 858509039880649330, guid: 6f6fdca4c2365cc44bd21c26ffd507d8, type: 3}
       propertyPath: m_MotionVectors
@@ -6012,6 +6016,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 858509039880649330, guid: 6f6fdca4c2365cc44bd21c26ffd507d8, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 858509039880649330, guid: 6f6fdca4c2365cc44bd21c26ffd507d8, type: 3}
       propertyPath: m_ApplyActiveColorSpace
       value: 1
       objectReference: {fileID: 0}
@@ -6022,7 +6030,7 @@ PrefabInstance:
     - target: {fileID: 858509039880649330, guid: 6f6fdca4c2365cc44bd21c26ffd507d8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+      objectReference: {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 858509039880649330, guid: 6f6fdca4c2365cc44bd21c26ffd507d8, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 

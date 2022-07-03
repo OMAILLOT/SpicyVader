@@ -27,6 +27,7 @@ public class SpawnBoss : MonoBehaviour
         }
     }
 
+    //Function spawn boss
     IEnumerator WaitForSpawnBoss()
     {
         Debug.Log("boss activé");

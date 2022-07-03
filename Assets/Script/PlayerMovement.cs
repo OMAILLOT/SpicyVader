@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
             var touch_Pos = _camera.ScreenToWorldPoint(touch.position);
             goToPostion = new Vector3(touch_Pos.x,touch_Pos.y,0);
             Vector3.Lerp(transform.position, goToPostion,100f);
-            transform.position = Vector3.MoveTowards(transform.position, goToPostion, gameManager.playerSpeed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, goToPostion, gameManager.playerSpeed * Time.fixedDeltaTime);
         }
     }
 

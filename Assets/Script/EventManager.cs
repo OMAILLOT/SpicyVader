@@ -26,12 +26,13 @@ public class EventManager : MonoBehaviour
 
     public void StartEvent()
     {
-        /*if (gameManager.worldLevel == 10 || gameManager.worldLevel >= 10 && gameManager.worldLevel % 5 == 0)
+        /*
+        if (gameManager.worldLevel == 10 || gameManager.worldLevel >= 10 && gameManager.worldLevel % 5 == 0)
         {
             isEventBoss = true;
             eventBoss.SetActive(true);
         } else
-        { */
+        {  */
             if (!isJustEvent)
             {
                 isItemTaken = false;
