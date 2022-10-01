@@ -29,7 +29,7 @@ public class ItemsWinEvent : MonoBehaviour
             eventManager.isEvent = false;
             Destroy(gameObject);
         }
-        if (transform.position.y >= 2f)
+        if (transform.position.y >= 2.5f)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y - GameManager.Instance.speedChillyPeper * Time.deltaTime, 0);
         }

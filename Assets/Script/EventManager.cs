@@ -17,6 +17,7 @@ public class EventManager : MonoBehaviour
     public bool isItemTaken = false;
     public bool chooseItems = false;
     public static EventManager instance;
+    [SerializeField] private List<GameObject> ItemsPlaceHolders;
 
     private void Start()
     {
@@ -49,7 +50,7 @@ public class EventManager : MonoBehaviour
         for (int i = 0; i < 3; i++)
         {
             int index = Random.Range(0, items.Length);
-            items[index].transform.position = new Vector3(-12 + i*1.5f, 8f, 0f);
+            items[index].transform.position = ItemsPlaceHolders[i].transform.position;
             Instantiate(items[index]);
         }
     }
