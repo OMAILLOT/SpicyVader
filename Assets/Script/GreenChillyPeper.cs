@@ -34,7 +34,7 @@ public class GreenChillyPeper : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Instantiate(rateOfFire);
-            AudioManager.instance.PlayClipAt(audio, transform.position);
+            AudioManager.Instance.PlayClipAt(audio, transform.position);
             Inventory.instance.UpdateTireRate();
             gameManager.countGreenChillyPeperEat++;
             Destroy(gameObject);

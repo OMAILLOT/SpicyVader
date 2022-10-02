@@ -1,10 +1,11 @@
+using BaseTemplate.Behaviours;
 using System.Collections;
 using System.Collections.Generic;
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class GameManager : MonoSingleton<GameManager>
 {
     public int worldLevel = 1;
     [Space(5)]
@@ -19,7 +20,6 @@ public class GameManager : MonoBehaviour
     public float score;
     [Space(10)]
     public int PlayerLife = 3;
-    public float playerSpeed = 0.2f;
     public float PlayerDamage = 20;
     public float RateShoot = 1.5f;
     public float speedBullet = 0.1f;
@@ -48,7 +48,6 @@ public class GameManager : MonoBehaviour
     public float timeForTuto= 15f;
     [Space(10)]
     public AudioClip playerDeath;
-    public static GameManager Instance;
     [Space(10)]
 
 
@@ -56,23 +55,13 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         timeForTuto += Time.time;
-
-
-        Instance = this;
-        if (Instance == null)
-        {
-            Debug.Log("Il n'y a pas d'instance GameManager");
-        
-        }
+        Screen.orientation = ScreenOrientation.Portrait;
     }
 
     private void Start()
     {
         baseBoostRedChillyPeper = boostRedChillyPeper;
-        Instantiate(spaceParticles[0]);
-        Instantiate(spaceParticles[1]);
 
-        Screen.orientation = ScreenOrientation.Portrait;
         inventory = Inventory.instance;
     }
 
@@ -83,7 +72,7 @@ public class GameManager : MonoBehaviour
     }
     public IEnumerator loadNextScene()
     {
-        AudioManager.instance.PlayClipAt(playerDeath, transform.position);
+        AudioManager.Instance.PlayClipAt(playerDeath, transform.position);
         fadeSystem.Play();
         yield return new WaitForSeconds(timeToWait);
         SceneManager.LoadScene(nameOfScene);

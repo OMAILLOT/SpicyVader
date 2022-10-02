@@ -1,25 +1,16 @@
+using BaseTemplate.Behaviours;
 using UnityEngine;
 using UnityEngine.Audio;
 
 
-public class AudioManager : MonoBehaviour
+public class AudioManager : MonoSingleton<AudioManager>
 {
     public AudioClip[] playlist;
     public AudioSource audioSource;
     public int musicIndex = 0;
     public AudioMixerGroup soundEffectMixer;
 
-    public static AudioManager instance;
 
-    private void Awake()
-    {
-        if (instance != null)
-        {
-            Debug.LogWarning("Il y a plus d'une instace AudioManager dans la scène");
-            return;
-        }
-        instance = this;
-    }
     public void Start()
     {
         musicIndex = Random.Range(0, playlist.Length);
@@ -35,7 +26,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void PlayNextSong()
+    private void PlayNextSong()
     {
 
         musicIndex = Random.Range(0, playlist.Length);

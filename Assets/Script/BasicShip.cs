@@ -66,7 +66,7 @@ public class BasicShip : MonoBehaviour
             {
                 Instantiate(Explosion, transform.position, Quaternion.identity);
                 musicIndex = Random.Range(0, ExplosionSound.Length);
-                AudioManager.instance.PlayClipAt(ExplosionSound[musicIndex], transform.position);
+                AudioManager.Instance.PlayClipAt(ExplosionSound[musicIndex], transform.position);
                 spawnBasicShip.countShipDestroy++;
                // Destroy(particleShoot);
                 Destroy(gameObject);
@@ -122,7 +122,7 @@ public class BasicShip : MonoBehaviour
 
         if (collision.CompareTag("Player"))
         {
-            PlayerMovement.instance.PlayerHit();
+            PlayerManager.Instance.PlayerHit();
         }
     }
 
@@ -131,7 +131,7 @@ public class BasicShip : MonoBehaviour
         //Instantiate(particleShoot);
         nextActionTime += TireRate + Random.Range(0,1f);
         musicIndex = Random.Range(0, shootAudios.Length);
-        AudioManager.instance.PlayClipAt(shootAudios[musicIndex], transform.position);
+        AudioManager.Instance.PlayClipAt(shootAudios[musicIndex], transform.position);
         bullet.transform.position = transform.position;
         Instantiate(bullet);
         yield return null;

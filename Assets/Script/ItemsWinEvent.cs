@@ -44,7 +44,7 @@ public class ItemsWinEvent : MonoBehaviour
                 case "RedHotChillyPeper" :
                     Instantiate(damageText);
                     Inventory.instance.UpdateDamage();
-                    AudioManager.instance.PlayClipAt(audio, transform.position);
+                    AudioManager.Instance.PlayClipAt(audio, transform.position);
                     gameManager.countRedHotChillyPeperEat++;
                     break;
                 case "GreenChillyPeper" :
@@ -54,7 +54,7 @@ public class ItemsWinEvent : MonoBehaviour
                     } else
                     {
                         Instantiate(rateOfFire);
-                        AudioManager.instance.PlayClipAt(audio, transform.position);
+                        AudioManager.Instance.PlayClipAt(audio, transform.position);
                         Inventory.instance.UpdateTireRate();
                         gameManager.countGreenChillyPeperEat++;
                     }
@@ -67,7 +67,7 @@ public class ItemsWinEvent : MonoBehaviour
                             gameManager.PlayerLife += 1;
                         }
                         Instantiate(LifeText);
-                        AudioManager.instance.PlayClipAt(lifeAudio, transform.position);
+                        AudioManager.Instance.PlayClipAt(lifeAudio, transform.position);
                         
                     }
                     break;

@@ -1,10 +1,11 @@
+using BaseTemplate.Behaviours;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Inventory : MonoBehaviour
+public class Inventory : MonoSingleton<Inventory>
 {
     public TextMeshProUGUI ScoreText;
     public TextMeshProUGUI BestScoreText;
@@ -129,12 +130,6 @@ public class Inventory : MonoBehaviour
         {
             gameManager.RateShoot -= gameManager.boostGreenChillyPeper;
         }
-        /*
-        totalTireRate *= 1 - gameManager.boostGreenChillyPeper + 1;
-        string stringTotal = totalTireRate.ToString();
-        string tireRateText = stringTotal[0] + "," + stringTotal[2];
-        //string tireRateText = (totalTireRate).ToString();
-        */
         TireRateText.text = gameManager.RateShoot.ToString();
     }
 

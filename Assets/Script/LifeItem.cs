@@ -33,7 +33,7 @@ public class LifeItem : MonoBehaviour
                 gameManager.PlayerLife += 1;
             } 
             Instantiate(LifeText);
-            AudioManager.instance.PlayClipAt(audio, transform.position);
+            AudioManager.Instance.PlayClipAt(audio, transform.position);
             Destroy(gameObject);
         }
     }

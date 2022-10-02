@@ -40,7 +40,7 @@ public class Shoot : MonoBehaviour
     {
         nextActionTime += gameManager.RateShoot;
         musicIndex = Random.Range(0, audios.Length);
-        AudioManager.instance.PlayClipAt(audios[musicIndex], transform.position);
+        AudioManager.Instance.PlayClipAt(audios[musicIndex], transform.position);
         spawnBullet(gameManager.PlayerLevel);
         switch (gameManager.PlayerLevel)
         {
@@ -48,12 +48,12 @@ public class Shoot : MonoBehaviour
                 if (gameManager.countRedHotChillyPeperEat >= gameManager.howManyRedCountToLevelUp)
                 {
                     gameManager.howManyRedCountToLevelUp *= 2f;
-                    playerMovement.levelUp();
+                    PlayerManager.Instance.levelUp();
                 }
                 else if (gameManager.countGreenChillyPeperEat >= gameManager.howManyGreenCountToLevelUp)
                 {
                     gameManager.howManyGreenCountToLevelUp *= 2f;
-                    playerMovement.greenLevelUp();
+                    PlayerManager.Instance.greenLevelUp();
                     tagBullet = "TinyBulletPlayer";
                 }
                 break;
@@ -61,33 +61,33 @@ public class Shoot : MonoBehaviour
                 if (gameManager.countRedHotChillyPeperEat >= gameManager.howManyRedCountToLevelUp && gameManager.isRedPlayer)
                 {
                     gameManager.howManyRedCountToLevelUp *= 1.5f;
-                    playerMovement.levelUp();
+                    PlayerManager.Instance.levelUp();
                 }
                 else if (gameManager.countGreenChillyPeperEat >= gameManager.howManyGreenCountToLevelUp && gameManager.isGreenPlayer)
                 {
                     gameManager.howManyGreenCountToLevelUp *= 1.5f;
-                    playerMovement.greenLevelUp();
+                    PlayerManager.Instance.greenLevelUp();
                 }
                 break;
             case 3:
                 if (gameManager.countRedHotChillyPeperEat >= gameManager.howManyRedCountToLevelUp && gameManager.isRedPlayer)
                 {
                     gameManager.howManyRedCountToLevelUp *= 1.33f;
-                    playerMovement.levelUp();
+                    PlayerManager.Instance.levelUp();
                 } else if (gameManager.countGreenChillyPeperEat >= gameManager.howManyGreenCountToLevelUp && gameManager.isGreenPlayer)
                 {
                     gameManager.howManyGreenCountToLevelUp *= 1.33f;
-                    playerMovement.greenLevelUp();
+                    PlayerManager.Instance.greenLevelUp();
                 }
                 break;
             case 4:
                 if (gameManager.countRedHotChillyPeperEat >= gameManager.howManyRedCountToLevelUp && gameManager.isRedPlayer)
                 {
-                    playerMovement.levelUp();
+                    PlayerManager.Instance.levelUp();
                 }
                 else if (gameManager.countGreenChillyPeperEat >= gameManager.howManyGreenCountToLevelUp && gameManager.isGreenPlayer)
                 {
-                    playerMovement.greenLevelUp();
+                    PlayerManager.Instance.greenLevelUp();
                 }
                 break;
         }

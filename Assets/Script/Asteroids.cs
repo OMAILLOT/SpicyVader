@@ -62,7 +62,7 @@ public class Asteroids : MonoBehaviour, IPooledObject
             }
             else
             {
-                randomTarget = PlayerMovement.instance.transform.position.x;
+                randomTarget = PlayerMovement.Instance.transform.position.x;
             }
 
         } else {
@@ -118,7 +118,7 @@ public class Asteroids : MonoBehaviour, IPooledObject
     {
         if (collision.CompareTag("Player"))
         {
-            PlayerMovement.instance.PlayerHit();
+            PlayerManager.Instance.PlayerHit();
         }
 
         if (collision.CompareTag("bullet") || collision.CompareTag("TinyBulletPlayer"))
@@ -131,7 +131,7 @@ public class Asteroids : MonoBehaviour, IPooledObject
     {
         Instantiate(particle, transform.position, Quaternion.identity);
         musicIndex = Random.Range(0, audios.Length);
-        AudioManager.instance.PlayClipAt(audios[musicIndex], transform.position);
+        AudioManager.Instance.PlayClipAt(audios[musicIndex], transform.position);
         if (currentChillyPeper.tag == "GreenChillyPeper" && !gameManager.isMaxTireRate || currentChillyPeper.tag == "RedHotChillyPeper" && !gameManager.isMaxDamage)
         {
             if (Random.Range(0f, 1f) <= dropLifeChance)

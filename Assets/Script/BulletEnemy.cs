@@ -23,7 +23,7 @@ public class BulletEnemy : MonoBehaviour
 
         if (collision.tag == "Player")
         {
-            PlayerMovement.instance.PlayerHit();
+            PlayerManager.Instance.PlayerHit();
             Destroy(gameObject);
         }
     }
