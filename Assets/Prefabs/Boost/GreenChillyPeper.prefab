@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3773732401092444936}
   m_LocalRotation: {x: 0, y: 0, z: 0.6427876, w: 0.7660445}
-  m_LocalPosition: {x: -0.7809572, y: 1.7704282, z: 0}
+  m_LocalPosition: {x: -1.5857835, y: -2.0874588, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -113,4 +113,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio: {fileID: 8300000, guid: 527939a1761c6cb4dbc95d6e71d6c4f9, type: 3}
-  rateOfFire: {fileID: 461989186314938017, guid: 948a702eb7c90cb4e9e0949dc3be67d8, type: 3}
+  PickupText: {fileID: 461989186314938017, guid: 948a702eb7c90cb4e9e0949dc3be67d8, type: 3}
+  collectibleSpeed: 1

@@ -8,7 +8,7 @@ public class RedHotChillyPeper : Collectible
     
     public override void PickupCollectible()
     {
-        Inventory.instance.UpdateDamage();
+        Inventory.Instance.UpdateDamage();
         GameManager.Instance.countRedHotChillyPeperEat++;
     }
 

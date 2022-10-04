@@ -62,7 +62,7 @@ public class GameManager : MonoSingleton<GameManager>
     {
         baseBoostRedChillyPeper = boostRedChillyPeper;
 
-        inventory = Inventory.instance;
+        inventory = Inventory.Instance;
     }
 
     private void Update()

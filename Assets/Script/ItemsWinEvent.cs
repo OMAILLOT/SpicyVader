@@ -6,16 +6,14 @@ using UnityEngine;
 public class ItemsWinEvent : MonoBehaviour
 {
     [Header("Chilly Peper")]
-    public new AudioClip audio;
+    public AudioClip audio;
     public TextMeshPro damageText;
     public TextMeshPro rateOfFire;
     [Space(10)]
-    public new AudioClip lifeAudio;
+    public AudioClip lifeAudio;
     public TextMeshPro LifeText;
     EventManager eventManager;
 
-
-    GameManager gameManager = GameManager.Instance;
     bool stopFalling = false;
     private void Start()
     {
@@ -43,28 +41,28 @@ public class ItemsWinEvent : MonoBehaviour
             {
                 case "RedHotChillyPeper" :
                     Instantiate(damageText);
-                    Inventory.instance.UpdateDamage();
+                    Inventory.Instance.UpdateDamage();
                     AudioManager.Instance.PlayClipAt(audio, transform.position);
-                    gameManager.countRedHotChillyPeperEat++;
+                    GameManager.Instance.countRedHotChillyPeperEat++;
                     break;
                 case "GreenChillyPeper" :
-                    if (gameManager.isMaxTireRate)
+                    if (GameManager.Instance.isMaxTireRate)
                     {
                         gameObject.SetActive(false);
                     } else
                     {
                         Instantiate(rateOfFire);
                         AudioManager.Instance.PlayClipAt(audio, transform.position);
-                        Inventory.instance.UpdateTireRate();
-                        gameManager.countGreenChillyPeperEat++;
+                        Inventory.Instance.UpdateTireRate();
+                        GameManager.Instance.countGreenChillyPeperEat++;
                     }
                         break;
                 case "LifeItem" :
                     if (collision.CompareTag("Player"))
                     {
-                        if (gameManager.PlayerLife < 5)
+                        if (GameManager.Instance.PlayerLife < 5)
                         {
-                            gameManager.PlayerLife += 1;
+                            GameManager.Instance.PlayerLife += 1;
                         }
                         Instantiate(LifeText);
                         AudioManager.Instance.PlayClipAt(lifeAudio, transform.position);

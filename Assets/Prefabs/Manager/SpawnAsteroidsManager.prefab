@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8925455558065272437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8925455558065272427}
+  - component: {fileID: 8925455558065272426}
+  m_Layer: 0
+  m_Name: SpawnAsteroidsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &8925455558065272427
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8925455558065272437}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8925455558065272426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8925455558065272437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cea69e17683e9bd4f839812ab2605420, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToRespawn: 1.4
+  reduceTimeToRespawn: 0.9
+  Delay: 6
+  multiplicatorDelay: 1.2
+  asteroids:
+  - {fileID: 8887150156223119998, guid: 7589341ec4da3a44ab700e77a747672b, type: 3}
+  - {fileID: 8887150156223119998, guid: 7589341ec4da3a44ab700e77a747672b, type: 3}
+  - {fileID: 8887150156223119998, guid: 7589341ec4da3a44ab700e77a747672b, type: 3}
+  - {fileID: 8887150156223119998, guid: 7589341ec4da3a44ab700e77a747672b, type: 3}
+  - {fileID: 8887150156223119998, guid: 7589341ec4da3a44ab700e77a747672b, type: 3}
+  - {fileID: 8887150156223119998, guid: 7589341ec4da3a44ab700e77a747672b, type: 3}
+  - {fileID: 6738060028388841871, guid: 3d7379ff5a1b2a24c8ed65f84c60a492, type: 3}
+  - {fileID: 6738060028388841871, guid: 3d7379ff5a1b2a24c8ed65f84c60a492, type: 3}
+  - {fileID: 6738060028388841871, guid: 3d7379ff5a1b2a24c8ed65f84c60a492, type: 3}
+  - {fileID: 6738060028388841871, guid: 3d7379ff5a1b2a24c8ed65f84c60a492, type: 3}
+  posBalises:
+  - {fileID: 0}
+  - {fileID: 0}
+  eventManager: {fileID: 0}
+  specialsAsteroids:
+  - {fileID: 2378615915256636950, guid: 304f916b8ca19ac43b1cc346427e0c51, type: 3}
+  - {fileID: 2378615915256636950, guid: 5ff8ec6d374e9e0488c4488b03608b86, type: 3}
+  - {fileID: 3501479594689419853, guid: a2f6750eadb9e354c81982f7785373f0, type: 3}
+  - {fileID: 3501479594689419853, guid: 5a5d626086bb8cf45ba7b0898af882e9, type: 3}
+  posSpecialBalises:
+  - {fileID: 0}
+  - {fileID: 0}
+  chanceToSpawnSpecialAsteroid: 0.13

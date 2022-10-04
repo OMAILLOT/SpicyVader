@@ -8,6 +8,7 @@ public class PlayerMovement : MonoSingleton<PlayerMovement>
 {
 
     // Could also already reference this in the Inspector if possible
+    public SpriteRenderer renderer;
     [SerializeField] private Camera _camera;
     [SerializeField] private float playerSpeed;
     [SerializeField] private Vector3 goToPostion = new Vector3(0, 0, 0);

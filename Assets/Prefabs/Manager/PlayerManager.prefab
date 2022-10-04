@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5541148361265021870
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5541148361265021871}
+  - component: {fileID: 5541148361265021868}
+  m_Layer: 0
+  m_Name: PlayerManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5541148361265021871
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5541148361265021870}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5541148361265021868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5541148361265021870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241768b647dd7e4f90068b58f9ac056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graphics: {fileID: 0}
+  invicibilityFlashDelay: 0.2
+  invicibilityDelay: 3
+  isInvincible: 0
+  playerHit: {fileID: 8300000, guid: 493ad8d4f6b9de54387c67203d351afe, type: 3}
+  levelUpSong: {fileID: 8300000, guid: bc1bfa23d10ed9f498a633e66914070b, type: 3}
+  playerParticles:
+  - {fileID: 2573867133999815694, guid: 1ca7135a55d3af74aa8755d403c04024, type: 3}
+  - {fileID: 4370785428946764213, guid: 5c0bc47b62379f749a61b7bcb0ad40fb, type: 3}
+  - {fileID: 2013730440802843609, guid: 51e99ee3c1d59554aaf7c48ef0953f7b, type: 3}
+  level: {fileID: 0}
+  levelUpText: {fileID: 8650668758289611301, guid: 4eae3664cfcd7c44d816a01c7a69f008, type: 3}
+  sprite: {fileID: 0}
+  fadeHit: {fileID: 0}

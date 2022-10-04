@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9191754157201463151}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3938138, y: 3.427508, z: 0}
+  m_LocalPosition: {x: 0.083962165, y: -2.6470644, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -97,7 +97,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio: {fileID: 8300000, guid: 1782b867f74c508448f962040b8356c7, type: 3}
-  LifeText: {fileID: 6686665723208537125, guid: 891f088224d652e44ac3ca225f92d2a7, type: 3}
+  PickupText: {fileID: 6686665723208537125, guid: 891f088224d652e44ac3ca225f92d2a7, type: 3}
+  collectibleSpeed: 0
 --- !u!58 &5946651676345159098
 CircleCollider2D:
   m_ObjectHideFlags: 0

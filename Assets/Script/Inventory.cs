@@ -7,42 +7,26 @@ using UnityEngine.UI;
 
 public class Inventory : MonoSingleton<Inventory>
 {
-    public TextMeshProUGUI ScoreText;
-    public TextMeshProUGUI BestScoreText;
+    [SerializeField] private TextMeshProUGUI ScoreText;
+    [SerializeField] private TextMeshProUGUI BestScoreText;
 
-
-    public TextMeshProUGUI DamageText;
-    public TextMeshProUGUI TireRateText;
+    [SerializeField] private TextMeshProUGUI DamageText;
+    [SerializeField] private TextMeshProUGUI TireRateText;
 
     GameManager gameManager;
 
-    public Image[] lifeImages;
-    public TextMeshProUGUI OverFiveLifeText;
-    public TextMeshProUGUI OverFiveLifeNumber;
-    public EventManager eventManager;
+    [SerializeField] private Image[] lifeImages;
+    [SerializeField] private TextMeshProUGUI OverFiveLifeText;
+    [SerializeField] private TextMeshProUGUI OverFiveLifeNumber;
+    [SerializeField] private EventManager eventManager;
 
-    public static Inventory instance;
-    private float baseTireRate;
-    private float totalTireRate;
 
-    private void Awake()
-    {
-
-        if (instance != null)
-        {
-            Debug.LogWarning("Il y a plus d'une instace d'inventory dans la scène");
-            return;
-        }
-        instance = this;
-    }
 
     private void Start()
     {
-        eventManager = GameObject.FindObjectOfType(typeof(EventManager)) as EventManager;
+        eventManager = FindObjectOfType(typeof(EventManager)) as EventManager;
         gameManager = GameManager.Instance;
         BestScoreText.text = Mathf.Round(PlayerPrefs.GetFloat("score")).ToString();
-        baseTireRate = gameManager.RateShoot;
-        totalTireRate = baseTireRate;
         UpdateDamageWithoutIncrease();
         UpdateTireRateWithoutIncrease();
     }

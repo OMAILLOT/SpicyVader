@@ -16,7 +16,9 @@ public class PlayerManager : MonoSingleton<PlayerManager>
     [SerializeField] private AudioClip levelUpSong;
     
     [Space(10)]
-    [SerializeField] private ParticleSystem[] playerParticles;
+    [SerializeField] private ParticleSystem playerHitParticle;
+    [SerializeField] private ParticleSystem playerDieParticle;
+    [SerializeField] private ParticleSystem playerLevelUpParticle;
     [Space(10)]
     [SerializeField] private TextMeshProUGUI level;
     [SerializeField] private TextMeshPro levelUpText;
@@ -44,9 +46,9 @@ public class PlayerManager : MonoSingleton<PlayerManager>
         GameManager.Instance.PlayerLevel++;
         GameManager.Instance.PlayerDamage = 20 + GameManager.Instance.PlayerLevel - 1;
         level.text = GameManager.Instance.PlayerLevel.ToString();
-        Inventory.instance.UpdateDamageWithoutIncrease();
+        Inventory.Instance.UpdateDamageWithoutIncrease();
         Instantiate(levelUpText);
-        Instantiate(playerParticles[2], transform.position, Quaternion.identity);
+        playerLevelUpParticle.Play();
     }
 
     public void greenLevelUp()
@@ -71,10 +73,10 @@ public class PlayerManager : MonoSingleton<PlayerManager>
         GameManager.Instance.boostRedChillyPeper = 1.5f;
         GameManager.Instance.PlayerLevel++;
         level.text = GameManager.Instance.PlayerLevel.ToString();
-        Inventory.instance.UpdateTireRateWithoutIncrease();
-        Inventory.instance.UpdateDamageWithoutIncrease();
+        Inventory.Instance.UpdateTireRateWithoutIncrease();
+        Inventory.Instance.UpdateDamageWithoutIncrease();
         Instantiate(levelUpText);
-        Instantiate(playerParticles[2], transform.position, Quaternion.identity);
+        playerLevelUpParticle.Play();
     }
 
 
@@ -84,9 +86,7 @@ public class PlayerManager : MonoSingleton<PlayerManager>
         {
 
             fadeHit.SetActive(true);
-
-            playerParticles[0].transform.position = transform.position;
-            Instantiate(playerParticles[0]);
+            playerHitParticle.Play();
             GameManager.Instance.PlayerLife -= 1;
 
             if (GameManager.Instance.PlayerLife > 0)
@@ -130,15 +130,14 @@ public class PlayerManager : MonoSingleton<PlayerManager>
     {
         if (!justOneTime)
         {
-            Instantiate(playerParticles[1], transform.position, Quaternion.identity);
-            //PlayerMovement.instance.enabled = false;
+            playerDieParticle.Play();
             if (GameManager.Instance.score > PlayerPrefs.GetFloat("score"))
             {
                 PlayerPrefs.SetFloat("score", GameManager.Instance.score);
             }
             justOneTime = true;
             StartCoroutine(GameManager.Instance.loadNextScene());
-            transform.position = new Vector3(transform.position.x + 100, transform.position.y, transform.position.z);
+            PlayerMovement.Instance.renderer.enabled = false;
         }
     }
 
