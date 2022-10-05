@@ -13,7 +13,7 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.position = new Vector3(transform.position.x,transform.position.y+GameManager.Instance.speedBullet * Time.deltaTime,0);
+        transform.position = new Vector3(transform.position.x,transform.position.y+ PlayerManager.Instance.speedBullet * Time.deltaTime,0);
         if (transform.position.y > 20)
             gameObject.SetActive(false);
     }

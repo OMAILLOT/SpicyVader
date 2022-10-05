@@ -33,13 +33,13 @@ public class Inventory : MonoSingleton<Inventory>
 
     public void UpdateLife()
     {
-        if (gameManager.PlayerLife >= 5)
+        if (PlayerManager.Instance.PlayerLife >= 5)
         {
             lifeImages[1].enabled = false;
             lifeImages[2].enabled = false;
             lifeImages[3].enabled = false;
             lifeImages[4].enabled = false;
-            OverFiveLifeNumber.text = gameManager.PlayerLife.ToString();
+            OverFiveLifeNumber.text = PlayerManager.Instance.PlayerLife.ToString();
             OverFiveLifeNumber.enabled = true;
             OverFiveLifeText.enabled = true;
             gameManager.isMaxLife = true;
@@ -50,7 +50,7 @@ public class Inventory : MonoSingleton<Inventory>
             gameManager.isMaxLife = false;
             for (int i = 0; i < lifeImages.Length; i++)
             {
-                if (gameManager.PlayerLife > i)
+                if (PlayerManager.Instance.PlayerLife > i)
                 {
                     lifeImages[i].enabled = true;
                 }
@@ -76,8 +76,8 @@ public class Inventory : MonoSingleton<Inventory>
         if (gameManager.isRedPlayer)
         {
 
-        gameManager.PlayerDamage += gameManager.boostRedChillyPeper;
-        string damageText = ((gameManager.PlayerDamage * gameManager.PlayerLevel)).ToString();
+            PlayerManager.Instance.PlayerDamage += gameManager.boostRedChillyPeper;
+        string damageText = ((PlayerManager.Instance.PlayerDamage * PlayerManager.Instance.PlayerLevel)).ToString();
         string finalText = "";
         for (int i = 0; i < damageText.Length; i++)
         {
@@ -89,32 +89,32 @@ public class Inventory : MonoSingleton<Inventory>
         DamageText.text = finalText;
         } else
         {
-            gameManager.PlayerDamage += gameManager.boostRedChillyPeper;
-            if (gameManager.PlayerDamage >= 15)
+            PlayerManager.Instance.PlayerDamage += gameManager.boostRedChillyPeper;
+            if (PlayerManager.Instance.PlayerDamage >= 15)
             {
-                gameManager.PlayerDamage = 15;
+                PlayerManager.Instance.PlayerDamage = 15;
                 DamageText.text = "Max";
             } else
             {
-                DamageText.text = gameManager.PlayerDamage.ToString();
+                DamageText.text = PlayerManager.Instance.PlayerDamage.ToString();
             }
         }
     }
 
     public void UpdateTireRate()
     {
-        if (gameManager.RateShoot <= 0.5 && gameManager.isRedPlayer)
+        if (PlayerManager.Instance.RateShoot <= 0.5 && gameManager.isRedPlayer)
         {
             gameManager.isMaxTireRate = true;
-            gameManager.RateShoot = 0.5f;
-        } else if (gameManager.RateShoot <= 0.3 && gameManager.isGreenPlayer && gameManager.PlayerLevel == 5)
+            PlayerManager.Instance.RateShoot = 0.5f;
+        } else if (PlayerManager.Instance.RateShoot <= 0.3 && gameManager.isGreenPlayer && PlayerManager.Instance.PlayerLevel == 5)
         {
             gameManager.isMaxTireRate = true;
         }  else if (gameManager.isRedPlayer)
         {
-            gameManager.RateShoot -= gameManager.boostGreenChillyPeper;
+            PlayerManager.Instance.RateShoot -= gameManager.boostGreenChillyPeper;
         }
-        TireRateText.text = gameManager.RateShoot.ToString();
+        TireRateText.text = PlayerManager.Instance.RateShoot.ToString();
     }
 
     public void UpdateDamageWithoutIncrease()
@@ -122,7 +122,7 @@ public class Inventory : MonoSingleton<Inventory>
         if (gameManager.isRedPlayer)
         {
 
-        string damageText = ((gameManager.PlayerDamage * gameManager.PlayerLevel)).ToString();
+        string damageText = ((PlayerManager.Instance.PlayerDamage * PlayerManager.Instance.PlayerLevel)).ToString();
         string finalText = "";
         for (int i = 0; i < damageText.Length; i++)
         {
@@ -134,14 +134,14 @@ public class Inventory : MonoSingleton<Inventory>
         DamageText.text = finalText;
         } else
         {
-            DamageText.text = gameManager.PlayerDamage.ToString();
+            DamageText.text = PlayerManager.Instance.PlayerDamage.ToString();
         }
     }
 
     public void UpdateTireRateWithoutIncrease()
     {
         //TireRateText.text = (totalTireRate).ToString();
-        TireRateText.text = gameManager.RateShoot.ToString();
+        TireRateText.text = PlayerManager.Instance.RateShoot.ToString();
 
     }
 }

@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoSingleton<GameManager>
 {
-    public int worldLevel = 1;
+    
     [Space(5)]
     public bool isRedPlayer = true;
     public bool isGreenPlayer = false;
@@ -19,11 +19,7 @@ public class GameManager : MonoSingleton<GameManager>
     public float howManyGreenCountToLevelUp;
     public float score;
     [Space(10)]
-    public int PlayerLife = 3;
-    public float PlayerDamage = 20;
-    public float RateShoot = 1.5f;
-    public float speedBullet = 0.1f;
-    public int PlayerLevel = 1;
+
     [Space(5)]
     public bool isMaxTireRate = false;
     public bool isMaxDamage = false;

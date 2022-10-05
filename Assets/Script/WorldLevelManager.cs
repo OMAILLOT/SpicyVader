@@ -1,7 +1,9 @@
+using BaseTemplate.Behaviours;
 using UnityEngine;
 
-public class WorldLevelManager : MonoBehaviour
+public class WorldLevelManager : MonoSingleton<WorldLevelManager>
 {
+    public int worldLevel = 1;
 
     public float asteroidsPV = 0;
     public float asteroidsSpeed = 0;
@@ -18,28 +20,6 @@ public class WorldLevelManager : MonoBehaviour
     [Space(5)]
     public float increaseBasicShipSpeed = 0.2f;
     public float increaseBasicShipPv = 2;
-    public static WorldLevelManager instance;
-    [Space(10)]
-    public int worldLevelForLevel2 = 5;
-    public int worldLevelForLevel3 = 10;
-    public int worldLevelForLevel4 = 15;
-    public int basicShipEventlevel = 1;
-
-    GameManager gameManager;
-    private void Awake()
-    {
-        instance = this;
-        if (instance == null)
-        {
-            Debug.Log("Il n'y a pas d'instance World Level Manager");
-
-        }
-    }
-    void Start()
-    {
-        gameManager = GameManager.Instance;
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -54,27 +34,5 @@ public class WorldLevelManager : MonoBehaviour
 
         basicShipPV += increaseBasicShipPv;
         basicShipSpeed += increaseBasicShipSpeed;
-
-        switch (basicShipEventlevel)
-        {
-            case 1:
-                if (gameManager.worldLevel >= worldLevelForLevel2)
-                {
-                    basicShipEventlevel = 2;
-                }
-                break;
-            case 2:
-                if (gameManager.worldLevel >= worldLevelForLevel3)
-                {
-                    basicShipEventlevel = 3;
-                }
-                break;
-            case 3:
-                if (gameManager.worldLevel >= worldLevelForLevel4)
-                {
-                    basicShipEventlevel = 4;
-                }
-                break;
-        }
     }
 }

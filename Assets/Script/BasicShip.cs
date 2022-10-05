@@ -2,138 +2,71 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BasicShip : MonoBehaviour
+public class BasicShip : MonoBehaviour, IPooledObject
 {
-    public float PV = 50;
-    public float speed = 3;
-    public float TireRate;
-    public float dropChance = 0.3f;
-    public float dropLifeChance = 0.05f;
-    public ParticleSystem particleShoot;
-    public ParticleSystem Explosion;
-    public AudioClip[] ExplosionSound;
+    [SerializeField] private float PV = 50;
+    [SerializeField] private float speed = 3;
+    [SerializeField] private float TireRate;
+    [SerializeField] private float dropChance = 0.3f;
+    [SerializeField] private float dropLifeChance = 0.05f;
+
+    [SerializeField] private ParticleSystem particleShoot;
+    [SerializeField] private ParticleSystem Explosion;
+    [SerializeField] private AudioClip[] ExplosionSound;
     [Space(5)]
-    //public GameObject mecanicPiece;
-    public GameObject playerLife;
-    public GameObject[] grid;
-    public GameObject bullet;
-    public AudioClip[] shootAudios;
+    [SerializeField] private GameObject bullet;
+    [SerializeField] private AudioClip[] shootAudios;
     private int musicIndex;
 
-
     float nextActionTime = 0.0f;
-    WorldLevelManager worldLevelManager;
-    SpawnBasicShip spawnBasicShip;
-    int howManyCell;
-    int whatCell;
-    bool stopMove;
 
-    private void Awake()
+    void IPooledObject.OnObjectSpawn()
     {
-        spawnBasicShip = SpawnBasicShip.instance;
-        worldLevelManager = WorldLevelManager.instance;
-    }
-    void Start()
-    {
-        grid = GameObject.FindGameObjectsWithTag("BaliseToGoBasicShip");
-        findWhatCell();
-        PV += worldLevelManager.basicShipPV;
-        speed += worldLevelManager.basicShipSpeed;
-        dropChance += worldLevelManager.basicShipDropChance;
-       
+        StartCoroutine(GoToPosition(BasicShipEvent.Instance.placeHolderLines[0].cellPlaceHolder[0]));
+        BasicShipEvent.Instance.placeHolderLines[0].cellPlaceHolder.Remove(BasicShipEvent.Instance.placeHolderLines[0].cellPlaceHolder[0]);
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        if (!stopMove)
+        if (Time.time >= nextActionTime)
         {
-            transform.position = Vector3.MoveTowards(transform.position, grid[whatCell].transform.position, Time.deltaTime * speed);
-            if (transform.position == grid[whatCell].transform.position)
-            {
-                stopMove = true;
-                nextActionTime = Time.time+0.5f;
-                particleShoot.transform.position = new Vector3(transform.position.x,transform.position.y - 0.3f, transform.position.z);
-                
-            }
-        } else
+            nextActionTime += TireRate + Random.Range(0, 1f);
+            musicIndex = Random.Range(0, shootAudios.Length);
+            AudioManager.Instance.PlayClipAt(shootAudios[musicIndex], transform.position);
+            bullet.transform.position = transform.position;
+            Instantiate(bullet);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.GetComponent<Bullet>())
         {
-            if (transform.position.y >= 8)
-            {
-                Destroy(gameObject);
-            }
+            PV -= PlayerManager.Instance.PlayerDamage;
             if (PV <= 0)
             {
                 Instantiate(Explosion, transform.position, Quaternion.identity);
                 musicIndex = Random.Range(0, ExplosionSound.Length);
                 AudioManager.Instance.PlayClipAt(ExplosionSound[musicIndex], transform.position);
-                spawnBasicShip.countShipDestroy++;
-               // Destroy(particleShoot);
-                Destroy(gameObject);
-            }
-            if (Time.time >= nextActionTime)
-            {
-                StartCoroutine(Shoot());
+                gameObject.SetActive(false);
+                BasicShipEvent.Instance.IncrementBasicShipDestroyCount();
             }
         }
 
-    }
-
-
-    void findWhatCell()
-    {
-        var stop = false;
-        switch (worldLevelManager.basicShipEventlevel)
-        {
-            case 1:
-                howManyCell = 4;
-                break;
-            case 2:
-                howManyCell = 8;
-                break;
-            case 3:
-                howManyCell = 12;
-                break;
-            case 4:
-                howManyCell = 16;
-                break;
-        }
-        
-        for (int i = 0; i < howManyCell; i++)
-        {
-
-            if (spawnBasicShip.lineTake[i] == 0 && !stop)
-            {
-                Debug.Log(i);
-                spawnBasicShip.lineTake[i] = 1;
-                whatCell = i;
-                stop = true;
-            }
-        }
-        
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("bullet") || collision.CompareTag("TinyBulletPlayer"))
-        {
-            PV -= GameManager.Instance.PlayerDamage;
-        }
-
-        if (collision.CompareTag("Player"))
+        if (collision.GetComponent<PlayerMovement>())
         {
             PlayerManager.Instance.PlayerHit();
         }
     }
 
-    IEnumerator Shoot()
+    IEnumerator GoToPosition(Transform placeHolder)
     {
-        //Instantiate(particleShoot);
-        nextActionTime += TireRate + Random.Range(0,1f);
-        musicIndex = Random.Range(0, shootAudios.Length);
-        AudioManager.Instance.PlayClipAt(shootAudios[musicIndex], transform.position);
-        bullet.transform.position = transform.position;
-        Instantiate(bullet);
-        yield return null;
+        while(transform.position != placeHolder.position)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, placeHolder.position, Time.deltaTime * speed);
+            yield return new WaitForEndOfFrame();
+        }
     }
+
+    
 }

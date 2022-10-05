@@ -60,9 +60,9 @@ public class ItemsWinEvent : MonoBehaviour
                 case "LifeItem" :
                     if (collision.CompareTag("Player"))
                     {
-                        if (GameManager.Instance.PlayerLife < 5)
+                        if (PlayerManager.Instance.PlayerLife < 5)
                         {
-                            GameManager.Instance.PlayerLife += 1;
+                            PlayerManager.Instance.PlayerLife += 1;
                         }
                         Instantiate(LifeText);
                         AudioManager.Instance.PlayClipAt(lifeAudio, transform.position);

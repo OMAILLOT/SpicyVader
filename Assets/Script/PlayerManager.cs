@@ -6,7 +6,12 @@ using UnityEngine;
 
 public class PlayerManager : MonoSingleton<PlayerManager>
 {
-
+    public int PlayerLife = 3;
+    public float PlayerDamage = 20;
+    public float RateShoot = 1.5f;
+    public float speedBullet = 0.1f;
+    public int PlayerLevel = 1;
+    [Space(10)]
     [SerializeField] private SpriteRenderer graphics;
     [SerializeField] private float invicibilityFlashDelay = 0.2f;
     [SerializeField] private float invicibilityDelay = 3f;
@@ -14,7 +19,6 @@ public class PlayerManager : MonoSingleton<PlayerManager>
     [Space(10)]
     [SerializeField] private AudioClip playerHit;
     [SerializeField] private AudioClip levelUpSong;
-    
     [Space(10)]
     [SerializeField] private ParticleSystem playerHitParticle;
     [SerializeField] private ParticleSystem playerDieParticle;
@@ -28,7 +32,7 @@ public class PlayerManager : MonoSingleton<PlayerManager>
     public void levelUp()
     {
         AudioManager.Instance.PlayClipAt(levelUpSong, transform.position);
-        switch (GameManager.Instance.PlayerLevel)
+        switch (PlayerLevel)
         {
             case 1:
                 GameManager.Instance.boostRedChillyPeper = GameManager.Instance.baseBoostRedChillyPeper / 2;
@@ -43,9 +47,9 @@ public class PlayerManager : MonoSingleton<PlayerManager>
                 GameManager.Instance.boostRedChillyPeper = GameManager.Instance.baseBoostRedChillyPeper / 5;
                 break;
         }
-        GameManager.Instance.PlayerLevel++;
-        GameManager.Instance.PlayerDamage = 20 + GameManager.Instance.PlayerLevel - 1;
-        level.text = GameManager.Instance.PlayerLevel.ToString();
+        PlayerLevel++;
+        PlayerDamage = 20 + PlayerLevel - 1;
+        level.text = PlayerLevel.ToString();
         Inventory.Instance.UpdateDamageWithoutIncrease();
         Instantiate(levelUpText);
         playerLevelUpParticle.Play();
@@ -54,25 +58,25 @@ public class PlayerManager : MonoSingleton<PlayerManager>
     public void greenLevelUp()
     {
         AudioManager.Instance.PlayClipAt(levelUpSong, transform.position);
-        GameManager.Instance.RateShoot = 0.3f - GameManager.Instance.PlayerLevel * 0.05f;
+        RateShoot = 0.3f - PlayerLevel * 0.05f;
         if (GameManager.Instance.isRedPlayer)
         {
-            GameManager.Instance.PlayerDamage = 9;
+            PlayerDamage = 9;
         }
         else
         {
-            GameManager.Instance.PlayerDamage -= 2;
-            if (GameManager.Instance.PlayerDamage <= 3)
+            PlayerDamage -= 2;
+            if (PlayerDamage <= 3)
             {
-                GameManager.Instance.PlayerDamage = 3;
+                PlayerDamage = 3;
             }
         }
         sprite.color = new Color(152, 255, 105);
         GameManager.Instance.isGreenPlayer = true;
         GameManager.Instance.isRedPlayer = false;
         GameManager.Instance.boostRedChillyPeper = 1.5f;
-        GameManager.Instance.PlayerLevel++;
-        level.text = GameManager.Instance.PlayerLevel.ToString();
+        PlayerLevel++;
+        level.text = PlayerLevel.ToString();
         Inventory.Instance.UpdateTireRateWithoutIncrease();
         Inventory.Instance.UpdateDamageWithoutIncrease();
         Instantiate(levelUpText);
@@ -87,9 +91,9 @@ public class PlayerManager : MonoSingleton<PlayerManager>
 
             fadeHit.SetActive(true);
             playerHitParticle.Play();
-            GameManager.Instance.PlayerLife -= 1;
+            PlayerLife -= 1;
 
-            if (GameManager.Instance.PlayerLife > 0)
+            if (PlayerLife > 0)
             {
                 isInvincible = true;
                 StartCoroutine(InvicibilityFlash());

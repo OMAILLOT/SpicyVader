@@ -9,7 +9,7 @@ public class EventManager : MonoBehaviour
     public bool isEventBoss;
     public float chanceEvent;
     [Space(5)]
-    public GameObject[] events;
+    public List<GameEvent> events;
     public bool isJustEvent = false;
     public GameObject[] items;
     public GameObject eventBoss;
@@ -27,21 +27,12 @@ public class EventManager : MonoBehaviour
 
     public void StartEvent()
     {
-        /*
-        if (gameManager.worldLevel == 10 || gameManager.worldLevel >= 10 && gameManager.worldLevel % 5 == 0)
+        if (!isJustEvent)
         {
-            isEventBoss = true;
-            eventBoss.SetActive(true);
-        } else
-        {  */
-            if (!isJustEvent)
-            {
-                isItemTaken = false;
-                indexEvent = Random.Range(0, events.Length);
-                Instantiate(events[indexEvent]);
-            }
-        //}
-        
+            isItemTaken = false;
+            indexEvent = Random.Range(0, events.Count);
+            events[indexEvent].ActiveEvent();
+        }
     }
 
     public void winEvent()

@@ -38,7 +38,7 @@ public class TimeForSpawnAsteroid : MonoBehaviour
     void Start()
     {
         objectPooler = ObjectPooler.instance;
-        worldLevelManager = WorldLevelManager.instance;
+        worldLevelManager = WorldLevelManager.Instance;
         gameManager = GameManager.Instance;
         nextActionTime = timeToRespawn + gameManager.timeForTuto;
         saveDelay = Delay;
@@ -61,15 +61,15 @@ public class TimeForSpawnAsteroid : MonoBehaviour
                 timeToRespawn *= reduceTimeToRespawn;
                 saveDelay = (int)Mathf.Round((float)saveDelay * multiplicatorDelay);
                 Delay = saveDelay;
-                gameManager.worldLevel++;
+                WorldLevelManager.Instance.worldLevel++;
                 if (chanceToSpawnSpecialAsteroid >= 0.02f)
                 {
                     chanceToSpawnSpecialAsteroid *= 0.9f;
                 }
                 if (
-                    (Random.Range(0f, 1f) <= eventManager.chanceEvent && eventManager.isEvent == false && !eventManager.isJustEvent) || 
-                    gameManager.worldLevel == 10 || 
-                    gameManager.worldLevel >= 10 && gameManager.worldLevel % 5 == 0 
+                    (Random.Range(0f, 1f) <= eventManager.chanceEvent && eventManager.isEvent == false && !eventManager.isJustEvent) ||
+                    WorldLevelManager.Instance.worldLevel == 10 ||
+                    WorldLevelManager.Instance.worldLevel >= 10 && WorldLevelManager.Instance.worldLevel % 5 == 0 
                     )
                 {
                     eventManager.isEvent = true;
@@ -92,7 +92,7 @@ public class TimeForSpawnAsteroid : MonoBehaviour
             if (!eventManager.isEvent)
             {
                 
-                float whatAsteroid = gameManager.worldLevel / 4;
+                float whatAsteroid = WorldLevelManager.Instance.worldLevel / 4;
                 if (whatAsteroid >= 4)
                 {
                     whatAsteroid = 4;

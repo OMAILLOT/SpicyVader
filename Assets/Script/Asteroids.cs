@@ -44,7 +44,7 @@ public class Asteroids : MonoBehaviour, IPooledObject
             isStart = true;
         }
         rightOrLeft = false;
-        worldLevelManager = WorldLevelManager.instance;
+        worldLevelManager = WorldLevelManager.Instance;
         PV = saveBasePv + worldLevelManager.asteroidsPV;
         speed = saveSpeed + worldLevelManager.asteroidsSpeed;
 
@@ -123,7 +123,7 @@ public class Asteroids : MonoBehaviour, IPooledObject
 
         if (collision.CompareTag("bullet") || collision.CompareTag("TinyBulletPlayer"))
         {
-            PV -= gameManager.PlayerDamage;
+            PV -= PlayerManager.Instance.PlayerDamage;
         }
     }
 

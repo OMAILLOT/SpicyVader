@@ -38,11 +38,11 @@ public class Shoot : MonoBehaviour
 
     IEnumerator SpawnBullet()
     {
-        nextActionTime += gameManager.RateShoot;
+        nextActionTime += PlayerManager.Instance.RateShoot;
         musicIndex = Random.Range(0, audios.Length);
         AudioManager.Instance.PlayClipAt(audios[musicIndex], transform.position);
-        spawnBullet(gameManager.PlayerLevel);
-        switch (gameManager.PlayerLevel)
+        spawnBullet(PlayerManager.Instance.PlayerLevel);
+        switch (PlayerManager.Instance.PlayerLevel)
         {
             case 1:
                 if (gameManager.countRedHotChillyPeperEat >= gameManager.howManyRedCountToLevelUp)
